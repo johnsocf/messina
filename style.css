@@ -63,8 +63,6 @@ nav a:active{
 	border-top:3px solid #000;
 	margin-top:-3px;
 }
-.primaryselected{
-}
 .contain{
 	width:940px;
 	margin:auto;
@@ -73,12 +71,6 @@ nav a:active{
 	width:700px;
 	margin:50px 18px;
 }
-h1{
-}
-h2{}
-#content p{
-}
-p{}
 .columnspan{
 	/* CSS3 */
 column-count: 2; 
@@ -99,7 +91,7 @@ column-gap:57px;
 font:Georgia, Serif;
 vertical-align:text-top;
 }
-.columnspan p{
+.columnspan{
 	column-span: all; /* CSS3 */
 	-webkit-column-span: all; /* Safari and Chrome */
 	-moz-column-span: all; /* Firefox */
@@ -126,13 +118,12 @@ vertical-align:text-top;
 	font-style:italic;
 	font-size: 14px;
 }
-#sidebar ul li{}
-#sidebar ul li a:link{}
-#sidebar ul li a:visited{}
 #sidebar ul li a:hover{
 	color:#a6a6a6;
 }
-#sidebar ul li a:active{}
+#sidebar ul li a:active{
+	color:#a6a6a6;
+}
 
 #sidebar li.selected a{
 	text-indent: 0px
@@ -140,12 +131,12 @@ vertical-align:text-top;
 form{
 	margin-left:20px;
 }
-.class-selected{
+.selected{
 	background-image: url(images/selectedarrow.png);
 	background-repeat: no-repeat;
 	background-position: 0px 5px;
 }
-#sidebar h1.menu{
+.menu{
 	background-image: url(images/sidebar.png);
 	height:25px;
 	width:234px;
