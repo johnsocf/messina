@@ -39,7 +39,7 @@ nav ul{
 nav ul li{
 	display:inline;
 }
-nav ul li a{
+nav a{
 	display:inline-block;
 	padding:10px;
 	text-decoration:none;
@@ -47,7 +47,7 @@ nav ul li a{
 	font-family: 'junction_regularregular', sans-serif;
 	color:#a6a6a6;
 }
-nav ul li a:hover{
+nav a:hover{
 	display:inline-block;
 	padding:10px;
 	text-decoration:none;
@@ -68,7 +68,7 @@ h2{}
 #content p{
 }
 p{}
-.class-columnspan{
+.columnspan{
 	/* CSS3 */
 column-count: 2; 
 
@@ -88,7 +88,7 @@ column-gap:57px;
 font:Georgia, Serif;
 vertical-align:text-top;
 }
-.class-columnspan p{
+.columnspan p{
 	column-span: all; /* CSS3 */
 	-webkit-column-span: all; /* Safari and Chrome */
 	-moz-column-span: all; /* Firefox */
@@ -113,6 +113,7 @@ vertical-align:text-top;
 	padding:0px;
 	margin-left:10px;
 	font-style:italic;
+	font-size: 14px;
 }
 #sidebar ul li{}
 #sidebar ul li a:link{}
@@ -122,7 +123,7 @@ vertical-align:text-top;
 }
 #sidebar ul li a:active{}
 
-#sidebar li.class-selected a{
+#sidebar li.selected a{
 	text-indent: 0px
 }
 form{
@@ -133,12 +134,13 @@ form{
 	background-repeat: no-repeat;
 	background-position: 0px 5px;
 }
-#sidebar p.menu{
+#sidebar h1.menu{
 	background-image: url(images/sidebar.png);
 	height:25px;
 	width:234px;
 	margin-top:40px;
 	margin-left:20px;
+	font-size:14px;
 }
 footer{
 	background-image: url(images/footerbg.png);
@@ -163,60 +165,30 @@ footer ul li a:hover{
 footer a {
 	display:block;
 }
-footer ul#id-socialmenu li a{
-	font-size: 12px;
+footer ul.footermenu li a{
+	font-size: 13px;
 	color:#000;
 	text-indent: 5px;
 }
-footer ul#id-socialmenu li a:hover {
+footer ul.footermenu li a:hover {
 	color:#a6a6a6;
 	background-image: url(images/selectedarrow.png);
 	background-repeat: no-repeat;
 	background-position: 0px 10px;
 }
-footer ul#id-philosophymenu li a{
-	font-size: 12px;
-	color:#000;
-	text-indent: 5px;
-}
-footer ul#id-philosophymenu li a:hover {
-	color:#a6a6a6;
-	background-image: url(images/selectedarrow.png);
-	background-repeat: no-repeat;
-	background-position: 0px 10px;
-}
-footer ul#id-contactmenu li a{
-	font-size: 12px;
-	color:#000;
-	text-indent: 5px;
-}
-footer ul#id-contactmenu li a:hover {
-	color:#a6a6a6;
-	background-image: url(images/selectedarrow.png);
-	background-repeat: no-repeat;
-	background-position: 0px 10px;
-}
-footer a img{
-	float:right;
-	margin:10px 10px;
-}
-ul#id-socialmenu{
+.footermenu{
 	float:left;
-	padding:20px 52px;
-	margin-left:-45px;
+	padding:20px 102px;
+	margin-left:-85px;
 }
-ul#id-philosophymenu{
-	float:left;
-	padding:20px 52px;
-}
-ul#id-contactmenu{
-	float:left;
-	padding:20px 52px;
-}
-
-a.class-footer{
+.footer{
 	opacity:.5;
 	text-indent: -9999px;
+	background-image: url(images/Messinalogo2.png);
+	width:184px;
+	height:130px;
+	float:right;
+	margin:10px 10px;
 }
 
 
