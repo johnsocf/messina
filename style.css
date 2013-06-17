@@ -94,12 +94,13 @@ vertical-align:text-top;
 	text-decoration:none;
 	color:#000;
 	margin:10px 10px;
-	text-indent: 10px
+	text-indent: 0px
 }
 #sidebar ul{
 	list-style-type:none;
 	padding:0px;
 	float:left;
+	margin-left:10px;
 }
 #sidebar ul li{}
 #sidebar ul li a:link{}
@@ -109,10 +110,10 @@ vertical-align:text-top;
 }
 #sidebar ul li a:active{}
 
-#sidebar li.selected a{
-	text-indent: 10px
+#sidebar li.class-selected a{
+	text-indent: 0px
 }
-.selected{
+.class-selected{
 	background-image: url(images/selectedarrow.png);
 	background-repeat: no-repeat;
 	background-position: 0px 5px;
