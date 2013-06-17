@@ -51,8 +51,19 @@ nav a:hover{
 	display:inline-block;
 	padding:10px;
 	text-decoration:none;
-	text-transform:uppercase;
 	color:#000;
+	border-top:3px solid #000;
+	margin-top:-3px;
+}
+nav a:active{
+	display:inline-block;
+	padding:10px;
+	text-decoration:none;
+	color:#000;
+	border-top:3px solid #000;
+	margin-top:-3px;
+}
+.primaryselected{
 }
 .contain{
 	width:940px;
