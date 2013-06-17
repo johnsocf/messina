@@ -120,13 +120,8 @@ vertical-align:text-top;
 }
 #sidebar ul li a:active{
 	color:#a6a6a6;
-	background-image: url(images/selectedarrow.png);
-	background-repeat: no-repeat;
-	background-position: 0px 5px;
 }
 
-#sidebar li.selected a{
-}
 form{
 	margin-left:20px;
 }
