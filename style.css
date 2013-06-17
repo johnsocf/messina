@@ -32,7 +32,6 @@ nav {
 }
 nav ul{
 	list-style-type:none;
-	margin:0;
 	padding:0;
 	text-align:center;
 }
@@ -88,28 +87,20 @@ column-gap:57px;
 -moz-column-gap:57px; /* Firefox */
 -webkit-column-gap:57px; /* Safari and Chrome */
 
-font:Georgia, Serif;
-vertical-align:text-top;
-}
-.columnspan{
-	column-span: all; /* CSS3 */
+column-span: all; /* CSS3 */
 	-webkit-column-span: all; /* Safari and Chrome */
 	-moz-column-span: all; /* Firefox */
 	-ms-column-span: all; /* Internet Explorer */
 	-o-column-span: all; /* Opera */
+
+font:Georgia, Serif;
+vertical-align:text-top;
 }
 #sidebar{
 	width:234px;
 	font-family:"Georgia", serif;
 	float:right;
 	margin:10px 0px;
-}
-#sidebar ul a{
-	display:block;
-	text-decoration:none;
-	color:#000;
-	margin:10px 10px;
-	text-indent: 0px
 }
 #sidebar ul{
 	list-style-type:none;
@@ -118,15 +109,23 @@ vertical-align:text-top;
 	font-style:italic;
 	font-size: 14px;
 }
+#sidebar ul a{
+	display:block;
+	text-decoration:none;
+	color:#000;
+	margin:10px 10px;
+}
 #sidebar ul li a:hover{
 	color:#a6a6a6;
 }
 #sidebar ul li a:active{
 	color:#a6a6a6;
+	background-image: url(images/selectedarrow.png);
+	background-repeat: no-repeat;
+	background-position: 0px 5px;
 }
 
 #sidebar li.selected a{
-	text-indent: 0px
 }
 form{
 	margin-left:20px;
@@ -161,18 +160,15 @@ footer ul li a{
 	color:#000;
 	padding:5px;
 }
-footer ul li a:hover{
-	color:#a6a6a6;
-}
 footer a {
 	display:block;
 }
-footer ul.footermenu li a{
+footer ul li a{
 	font-size: 13px;
 	color:#000;
 	text-indent: 5px;
 }
-footer ul.footermenu li a:hover {
+footer ul li a:hover {
 	color:#a6a6a6;
 	background-image: url(images/selectedarrow.png);
 	background-repeat: no-repeat;
