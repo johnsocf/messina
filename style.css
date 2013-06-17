@@ -1,0 +1,166 @@
+body {
+	font-family:"Georgia", serif;
+	background-color:#fff;
+}
+header {}
+header{
+	background-image: url(images/Messinalogo.png);
+	background-position: 320px;
+	background-repeat:no-repeat;
+	position:relative;
+	margin-right:auto;
+	height:130px;
+	width:300px;
+}
+header a{
+}
+h1.hidden{
+	position:fixed;
+	top:-999px;
+}
+nav {
+	border:1px solid #000;
+	border-width:1px 0;
+}
+nav ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+nav ul li{
+	display:inline;
+}
+nav ul li a{
+	display:inline-block;
+	padding:10px;
+	text-decoration:none;
+	color:#a6a6a6;
+}
+nav ul li a:hover{
+	display:inline-block;
+	padding:10px;
+	text-decoration:none;
+	color:#000;
+}
+.contain{
+	width:940px;
+	margin:auto;
+}
+#content{
+	width:700px;
+	margin:50px 18px;
+}
+h1{
+}
+h2{}
+#content p{
+}
+p{}
+.class-columnspan{
+	/* CSS3 */
+column-count: 2; 
+
+/* Safari and Chrome */
+-webkit-column-count: 2;
+-moz-column-count: 2; 
+
+/* Internet Explorer */
+-ms-column-count: 2; 
+/* Opera */
+-o-column-count: 2; 
+
+column-gap:57px;
+-moz-column-gap:57px; /* Firefox */
+-webkit-column-gap:57px; /* Safari and Chrome */
+
+font:Georgia, Serif;
+vertical-align:text-top;
+}
+.class-columnspan p{
+	column-span: all; /* CSS3 */
+	-webkit-column-span: all; /* Safari and Chrome */
+	-moz-column-span: all; /* Firefox */
+	-ms-column-span: all; /* Internet Explorer */
+	-o-column-span: all; /* Opera */
+}
+#sidebar{
+	width:224px;
+	font-family:"Georgia", serif;
+	float:right;
+	margin:0px 18px;
+}
+#sidebar ul a{
+	display:block;
+	text-decoration:none;
+	color:#000;
+	margin:10px 0;
+}
+#sidebar ul{
+	list-style-type:none;
+	padding:0px;
+	float:left;
+}
+#sidebar ul li{}
+#sidebar ul li a:link{}
+#sidebar ul li a:visited{}
+#sidebar ul li a:hover{
+	color:#a6a6a6;
+}
+#sidebar ul li a:active{}
+
+#sidebar li.selected a{
+
+}
+#sidebar ul p.menu{
+	background-image: url(images/sidebar.png);
+	height:25px;
+	width:224px;
+}
+footer{
+	background-image: url(images/footerbg.png);
+	height:262px;
+}
+footer ul{
+	list-style-type:none;
+}
+footer ul li{
+	display:inline;
+}
+footer ul li a{
+	font-family:"Georgia", serif;
+	text-decoration:none;
+	color:#000;
+	padding:5px;
+}
+footer ul li a:hover{
+	color:#a6a6a6;
+}
+footer a {
+	display:block;
+}
+footer a img{
+	float:right;
+}
+ul#id-socialmenu{
+	float:left;
+	padding:20px 52px;
+	margin-left:-40px;
+}
+ul#id-philosophymenu{
+	float:left;
+	padding:20px 52px;
+}
+ul#id-contactmenu{
+	float:left;
+	padding:20px 52px;
+}
+
+a.hidden{
+	top:-999px;
+}
+a.class-footer{
+	opacity:.5;
+}
+
+
