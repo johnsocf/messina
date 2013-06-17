@@ -139,6 +139,12 @@ footer ul li a:hover{
 footer a {
 	display:block;
 }
+footer ul#id-socialmenu li a{
+	color:#000;
+}
+footer ul#id-socialmenu li a:hover {
+	color:#a6a6a6;
+}
 footer a img{
 	float:right;
 }
