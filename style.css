@@ -164,6 +164,7 @@ footer a {
 	display:block;
 }
 footer ul#id-socialmenu li a{
+	font-size: 12px;
 	color:#000;
 	text-indent: 5px;
 }
@@ -174,6 +175,7 @@ footer ul#id-socialmenu li a:hover {
 	background-position: 0px 10px;
 }
 footer ul#id-philosophymenu li a{
+	font-size: 12px;
 	color:#000;
 	text-indent: 5px;
 }
@@ -184,6 +186,7 @@ footer ul#id-philosophymenu li a:hover {
 	background-position: 0px 10px;
 }
 footer ul#id-contactmenu li a{
+	font-size: 12px;
 	color:#000;
 	text-indent: 5px;
 }
