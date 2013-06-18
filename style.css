@@ -3,9 +3,19 @@ body {
 	background-color:#fff;
 }
 header{
-	background-image: url(images/Messinalogo.png);
-	background-position: 320px;
 	background-repeat:no-repeat;
+	position:relative;
+	margin-right:auto;
+}
+header a{
+	height:130px;
+	width:300px;
+	display:block;
+	margin:0;
+	padding:0;
+}
+#mainlogo{
+	background-image: url(images/Messinalogo.png);
 	position:relative;
 	margin-right:auto;
 	height:130px;
@@ -73,6 +83,7 @@ nav a:active{
 .columnspan{
 	/* CSS3 */
 column-count: 2; 
+text-align:justify;
 
 /* Safari and Chrome */
 -webkit-column-count: 2;
@@ -140,6 +151,16 @@ form{
 }
 footer{
 	background-image: url(images/footerbg.png);
+	background-color: #F07575; 
+	box-shadow: inset 0px 4px 6px -6px rgba(0,0,0,0.9);
+  	/*background-image: -webkit-linear-gradient(bottom, hsl(0, 80%, 70%), #000 99.99%); 
+  	background-image:    -moz-linear-gradient(bottom, hsl(0, 80%, 70%), #000 99.99%);
+  	background-image:     -ms-linear-gradient(bottom, hsl(0, 80%, 70%), #000 99.99%); 
+  	background-image:      -o-linear-gradient(bottom, hsl(0, 80%, 70%), #000 99.99%); 
+  	background-image:         linear-gradient(to top, hsl(0, 80%, 70%), #000 99.99%); */
+);
+
+
 	height:262px;
 }
 footer ul{
