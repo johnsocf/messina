@@ -149,10 +149,17 @@ form{
 	margin-left:20px;
 	font-size:14px;
 }
-footer{
-	background-image: url(images/footerbg.png);
-	background-color: #F07575; 
-	box-shadow: inset 0px 4px 6px -6px rgba(0,0,0,0.9);
+footer{ 
+	width:100%;
+	min-height:250px;
+	display:block;
+	clear:both;
+	background-image: -moz-linear-gradient(top, rgba(0,0,0,0.55) -20%,rgba(0,1,0,0) 3%,rgba(0,0,0,0) 100%), url(images/footerbg.png);
+	background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.55) -20%,rgba(0,1,0,0) 3%,rgba(0,0,0,0) 100%), url(images/footerbg.png);
+	background-image: -ms-linear-gradient(top, rgba(0,0,0,0.55) -20%,rgba(0,1,0,0) 3%,rgba(0,0,0,0) 100%), url(images/footerbg.png);
+	background-image: -o-linear-gradient(top, rgba(0,0,0,0.55) -20%,rgba(0,1,0,0) 3%,rgba(0,0,0,0) 100%), url(images/footerbg.png);
+	background-image: (top, rgba(0,0,0,0.55) -20%,rgba(0,1,0,0) 3%,rgba(0,0,0,0) 100%), url(images/footerbg.png);
+	/*box-shadow: inset 0px 4px 6px -6px rgba(0,0,0,0.9);*/
   	/*background-image: -webkit-linear-gradient(bottom, hsl(0, 80%, 70%), #000 99.99%); 
   	background-image:    -moz-linear-gradient(bottom, hsl(0, 80%, 70%), #000 99.99%);
   	background-image:     -ms-linear-gradient(bottom, hsl(0, 80%, 70%), #000 99.99%); 
