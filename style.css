@@ -260,10 +260,6 @@ footer ul li a:hover {
 	float:right;
 	margin:0px 0px;
 }
-span {
-	position:fixed;
-	top: -999px;
-}
 .clearfix:after {
 	content:"";
 	display: table;
