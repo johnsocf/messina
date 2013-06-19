@@ -59,13 +59,18 @@ nav a:hover, nav a:active{
 	margin-top:-3px;
 }
 #main{
-	margin:42px 80px;
+	margin-top:40px;
 	padding:0px;
 }
 .contain{
 	width:940px;
 	margin:0 auto;
 	padding:0px;
+}
+.contain:after{
+	content:"";
+	display: table;
+	clear: both;
 }
 #content{
 	width:700px;
@@ -106,6 +111,7 @@ column-span: all; /* CSS3 */
 
 font:Georgia, Serif;
 vertical-align:text-top;
+margin:20px 10px 20px 0;
 }
 #sidebar{
 	width:220px;
@@ -201,7 +207,7 @@ footer ul li{
 footer ul li a{
 	font-family:"Georgia", serif;
 	text-decoration:none;
-	color:#000;
+	color:#4c4c4c;
 	padding:5px 5px;
 	margin:0;
 	font-size: 81.25%;
@@ -213,7 +219,7 @@ footer ul li a{
 footer ul li a:hover:before {
 	content: "\00BB   ";
 	margin-left: -11px;
-	color: rgb(76,76,76)
+	color:#4c4c4c;
 }
 .footermenu{
 	float:left;
@@ -230,10 +236,10 @@ footer ul li a:hover:before {
 	float:right;
 	margin:-8px 55px;
 }
-.clearfix:after {
+/*.clearfix:after {
 	content:"";
 	display: table;
 	clear: both;
 }
-
+*/
 
