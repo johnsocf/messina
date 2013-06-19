@@ -53,7 +53,6 @@ nav a{
 nav a:hover, nav a:active{
 	display:inline-block;
 	padding:10px;
-	text-decoration:none;
 	color:#000;
 	border-top:3px solid #000;
 	margin-top:-3px;
@@ -233,13 +232,13 @@ footer ul li a:hover:before {
 #footerlogo{
 	opacity:.5;
 	background-image: url(images/Messinalogo.png);
-	background-size:80%;
+	background-size:83%;
 	background-repeat: no-repeat;
 	position:absolute;
 	width:220px;
 	height:130px;
 	float:right;
-	margin:-8px 50px;
+	margin:-8px 55px;
 }
 .clearfix:after {
 	content:"";
