@@ -65,7 +65,7 @@ nav a:hover, nav a:active{
 .contain{
 	width:940px;
 	margin:0 auto;
-	padding:0 82px;
+	padding:0px;
 }
 #content{
 	width:700px;
@@ -80,7 +80,7 @@ h2{
 	margin:0;
 	padding:0;
 }
-.columnspan{
+#content p{
 	/* CSS3 */
 column-count: 2; 
 text-align:justify;
@@ -94,9 +94,9 @@ text-align:justify;
 /* Opera */
 -o-column-count: 2; 
 
-column-gap:57px;
--moz-column-gap:57px; /* Firefox */
--webkit-column-gap:57px; /* Safari and Chrome */
+column-gap:27px;
+-moz-column-gap:27px; /* Firefox */
+-webkit-column-gap:27px; /* Safari and Chrome */
 
 column-span: all; /* CSS3 */
 	-webkit-column-span: all; /* Safari and Chrome */
@@ -108,7 +108,7 @@ font:Georgia, Serif;
 vertical-align:text-top;
 }
 #sidebar{
-	width:223px;
+	width:220px;
 	font-family:"Georgia", serif;
 	float:right;
 	margin:0px;
@@ -116,20 +116,20 @@ vertical-align:text-top;
 #sidebar ul{
 	list-style-type:none;
 	padding:0px;
-	margin-left:20px;
+	margin-left:0px;
 	font-style:italic;
-	font-size: 14px;
+	font-size: 87%;
 }
 #sidebar ul a{
 	display:block;
 	text-decoration:none;
-	color:#000;
+	color:rgb(178,177,184);
 	margin:10px 0px;
 }
 #sidebar ul li a:hover:before{
-	color:#a6a6a6;
+	color:rgb (178,177,184);
 	content: "\00BB   ";
-	margin-left: -11px;
+	margin-left: -11.5px;
 }
 #sidebar ul li a:active{
 	color:#a6a6a6;
@@ -144,16 +144,16 @@ vertical-align:text-top;
 	padding: 2px;
 }
 #search input[type=text]{
-	width:150px;
+	width:140px;
 	height: 30px;
 	line-height: 30px;
-	margin-left:20px;
+	margin-left:0px;
 }
 #search input[type=submit]{
 	width: 70px;
 	height: 36px;
 	text-transform: uppercase;
-	margin-right:-30px;
+	margin-right:0px;
 	float:right;
 }
 .selected{
@@ -165,8 +165,8 @@ vertical-align:text-top;
 	height:20px;
 	width:234px;
 	margin-top:46px;
-	margin-left:20px;
-	font-size:14px;
+	margin-left:0px;
+	font-size:87%;
 	border-bottom:1px solid gray;
 }
 footer{ 
@@ -204,8 +204,8 @@ footer ul li a{
 	color:#000;
 	padding:5px 5px;
 	margin:0;
-	font-size: 13px;
-	color:#000;
+	font-size: 81.25%;
+	color:rgb (178,177,184);
 	text-indent: 0px;
 	display:block;
 }
@@ -213,7 +213,7 @@ footer ul li a{
 footer ul li a:hover:before {
 	content: "\00BB   ";
 	margin-left: -11px;
-	color: #aaa9ba;
+	color: rgb(76,76,76)
 }
 .footermenu{
 	float:left;
