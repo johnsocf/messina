@@ -133,6 +133,7 @@ footer ul li a:hover:before{
 	color:rgb (178,177,184);
 	content: "\00BB   ";
 	margin-left: -10.8px;
+	position: absolute;
 }
 #sidebar ul li a:active{
 	color:#a6a6a6;
