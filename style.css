@@ -10,7 +10,7 @@ header{
 a#mainlogo{
 	background: url(images/Messinalogo.png) no-repeat;
 	margin:0 auto;
-	padding: 0 0px;
+	padding:0px;
 	display:block;
 	height:130px;
 	width:300px;
@@ -58,11 +58,6 @@ nav a:hover, nav a:active{
 	border-top:3px solid #000;
 	margin-top:-3px;
 }
-
-#button{
-	background-color:#000;
-	background-image:url(images/footerbg.png);
-}
 #main{
 	margin:42px 80px;
 	padding:0px;
@@ -75,13 +70,12 @@ nav a:hover, nav a:active{
 #content{
 	width:700px;
 	float:left;
-	margin:0px 0px;
+	margin:0px;
 	padding:0px;
 }
 #content ul {
 	list-style:none;
 }
-#content ul li a{}
 h2{
 	margin:0;
 	padding:0;
