@@ -10,15 +10,15 @@ header{
 	margin: 0 auto;
 }
 header a{
-	background-image: url(images/Messinalogo.png);
+	background: url(images/Messinalogo.png) no-repeat;
 	height:130px;
 	width:300px;
 	display:block;
 	margin:0 auto;
-	padding:0 auto;
+	padding:0 0px;
 
 }
-#mainlogo{
+a #mainlogo{
 	position:relative;
 	margin:0 auto;
 	padding: 0 400px;
@@ -144,14 +144,14 @@ vertical-align:text-top;
 }
 #sidebar ul li a:hover:before{
 	color:#a6a6a6;
-	content: "\00BB ";
-	margin-left: -8px;
+	content: "\00BB   ";
+	margin-left: -11px;
 }
 #sidebar ul li a:active{
 	color:#a6a6a6;
 }
 form{
-	margin:0 18px;
+	margin:0 20px;
 	width:223px;
 }
 form input[type="submit"]{
@@ -161,9 +161,9 @@ form input[type="submit"]{
 	border:1px solid black;
 	font-size:13px;
 	margin-top:0px;
-	margin-left:173px;
+	margin-left:175px;
 	position:absolute;
-	line-height:180%;
+	line-height:240%;
 	font-family: 'junction_regularregular', sans-serif;
 	padding:0px;
 	opacity:.2;
@@ -172,7 +172,7 @@ form input[type="submit"]{
 }
 form input[type="text"]{
 	height:23px;
-	width:161px;
+	width:166px;
 	margin-left:0px;
 	position:absolute;
 	margin-top:0px;
@@ -187,12 +187,12 @@ form input[type="text"]{
 	background-position: 0px 5px;
 }
 .menu{
-	background-image: url(images/sidebar.png);
-	height:25px;
+	height:20px;
 	width:234px;
 	margin-top:66px;
 	margin-left:20px;
 	font-size:14px;
+	border-bottom:1px solid gray;
 }
 footer{ 
 	width:100%;
@@ -237,8 +237,8 @@ footer ul li a{
 }
 
 footer ul li a:hover:before {
-	content: "\00BB ";
-	margin-left: -8px;
+	content: "\00BB   ";
+	margin-left: -11px;
 	color: #aaa9ba;
 }
 .footermenu{
@@ -248,13 +248,14 @@ footer ul li a:hover:before {
 }
 #footerlogo{
 	opacity:.5;
-	background-image: url(images/Messinalogo2.png);
+	background-image: url(images/Messinalogo.png);
+	background-size:80%;
 	background-repeat: no-repeat;
 	position:absolute;
 	width:220px;
 	height:130px;
 	float:right;
-	margin:0px 50px;
+	margin:-8px 50px;
 }
 .clearfix:after {
 	content:"";
