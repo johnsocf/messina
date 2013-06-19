@@ -116,7 +116,7 @@ vertical-align:text-top;
 #sidebar ul{
 	list-style-type:none;
 	padding:0px;
-	margin-left:10px;
+	margin-left:20px;
 	font-style:italic;
 	font-size: 14px;
 }
@@ -124,7 +124,7 @@ vertical-align:text-top;
 	display:block;
 	text-decoration:none;
 	color:#000;
-	margin:10px;
+	margin:10px 0px;
 }
 #sidebar ul li a:hover:before{
 	color:#a6a6a6;
