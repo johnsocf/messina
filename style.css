@@ -157,12 +157,10 @@ form input[type="submit"]{
 form input[type="text"]{
 	height:23px;
 	width:166px;
-	margin-left:0px;
+	margin:0px;
 	position:absolute;
-	margin-top:0px;
 	padding:0px;
 	float:left;
-	margin-left:0px;
 	opacity:.5;
 }
 .selected{
@@ -201,7 +199,6 @@ footer ul{
 	list-style-type:none;
 	font-style:italic;
 	width:220px;
-	margin-right:0px;
 	margin:0;
 	padding:0;
 }
@@ -232,9 +229,8 @@ footer ul li a:hover:before {
 }
 #footerlogo{
 	opacity:.5;
-	background-image: url(images/Messinalogo.png);
+	background: url(images/Messinalogo.png) no-repeat;
 	background-size:83%;
-	background-repeat: no-repeat;
 	position:absolute;
 	width:220px;
 	height:130px;
