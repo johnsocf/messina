@@ -134,34 +134,27 @@ vertical-align:text-top;
 #sidebar ul li a:active{
 	color:#a6a6a6;
 }
-form{
-	margin:0 20px;
-	width:223px;
+#search input{
+	font-family: 'junctionregularRegular', Arial, sans-serif;
+	font-size: 14px;
+	color: #aaa9ba;
+	background: #ffffff;
+	border:1px solid #aaa9ba;
+	margin: 0;
+	padding: 2px;
 }
-form input[type="submit"]{
-	background-color:#fff;
-	text-transform:uppercase;
-	display:inline-block;
-	border:1px solid black;
-	font-size:13px;
-	margin-top:0px;
-	margin-left:175px;
-	position:absolute;
-	line-height:240%;
-	font-family: 'junction_regularregular', sans-serif;
-	padding:0px;
-	opacity:.2;
-	width:59px;
-	height:29px;
+#search input[type=text]{
+	width:150px;
+	height: 30px;
+	line-height: 30px;
+	margin-left:20px;
 }
-form input[type="text"]{
-	height:23px;
-	width:166px;
-	margin:0px;
-	position:absolute;
-	padding:0px;
-	float:left;
-	opacity:.5;
+#search input[type=submit]{
+	width: 70px;
+	height: 36px;
+	text-transform: uppercase;
+	margin-right:-30px;
+	float:right;
 }
 .selected{
 	content: "\00BB ";
@@ -171,7 +164,7 @@ form input[type="text"]{
 .menu{
 	height:20px;
 	width:234px;
-	margin-top:66px;
+	margin-top:46px;
 	margin-left:20px;
 	font-size:14px;
 	border-bottom:1px solid gray;
