@@ -6,8 +6,8 @@
 	</head>
 	<body>
 
-		<header class="contain">
-			<a href="/"><h1 class="hidden">Messina/Statements of Fashion</h1></a>
+		<header class="contain" id="main-header">
+			<a id="logo-primary" href="/"><h1 class="hidden">Messina/statements of Fashion</h1></a>
 		</header>
 	
 		<nav>
@@ -19,53 +19,97 @@
 			</ul>
 		</nav>	
 		
-		<div class="contain">
+		<div class="contain" id="main">
 			<div id="sidebar">
-				<form>
+				<form id="search">
 					<input type="text" name="search" placeholder="Search..." />
-					<input type="submit" value="Search"/>
+					<input type="submit" value="search"/>
 				</form>
 						
-				<h1 class="menu">Kitchen</h1>	
+				<h1>About Messina</h1>	
 				<ul role="navigation">
-					<li class="selected"><a href="FIXME">Dining Tables &amp; Chairs</a></li>
+					<li><a href="FIXME">Dining Tables &amp; Chairs</a></li>
 					<li><a href="FIXME">Must Have Appliances</a></li>
-					<li><a href="FIXME">Plates, Bowls &amp; Glasses</a></li>
+					<li><a href="FIXME">Plates, Bowles &amp; Glasses</a></li>
 					<li><a href="FIXME">Tableware &amp; Accoutrement</a></li>
 				</ul>
 			</div><!-- #sidebar -->
-			<div id="content" class="tables">
-				<h1>Kitchen Tables</h1>
-				<ul>
-					<li><a href="FIXME"><h2>Big Sir Dining Table</h2><button type="button">Quick View</button><p>$1499</p></a></li>
-					<li><a href="FIXME"><h2>Table2</h2><button type="button">Quick View</button>xyz</a></li>
-					<li><a href="FIXME"><h2>Table3</h2><button type="button">Quick View</button>xyz</a></li>
-					<li><a href="FIXME"><h2>Table4</h2><button type="button">Quick View</button>xyz</a></li>
-					<li><a href="FIXME"><h2>Table5</h2><button type="button">Quick View</button>xyz</a></li>
-					<li><a href="FIXME"><h2>Table6</h2><button type="button">Quick View</button>xyz</a></li>
+			<div id="content">
+				<h1 class="hidden">Kitchen Tables</h1>
+				<ul class="tables">
+					<li>
+						<a href="FIXME">
+							<h2>Big Sir Dining Table</h2>
+							<div id="button">Quick View</div>
+							<img class="image-box" src="FIXME" alt="Big Sir Dining Table"/>
+							<span>$1499</span>
+						</a>
+					</li>
+					<li>
+						<a href="FIXME">
+							<h2>Table 2</h2>
+							<div id="button">Quick View</div>
+							<img class="image-box" src="FIXME" alt="Table2"/>
+							<span>$xyz</span>
+						</a>
+					</li>
+					<li>
+						<a href="FIXME">
+							<h2>Table 3</h2>
+							<div id="button">Quick View</div>
+							<img class="image-box" src="FIXME" alt="Table3"/>
+							<span>$xyz</span>
+						</a>
+					</li>
+					<li>
+						<a href="FIXME">
+							<h2>Table 4</h2>
+							<div id="button">Quick View</div>
+							<img class="image-box" src="FIXME" alt="Table4"/>
+							<span>$xyz</span>
+						</a>
+					</li>
+					<li>
+						<a href="FIXME">
+							<h2>Table 5</h2>
+							<div id="button">Quick View</div>
+							<img class="image-box" src="FIXME" alt="Table5"/>
+							<span>$xyz</span>
+						</a>
+					</li>
+					<li>
+						<a href="FIXME">
+							<h2>Table 6</h2>
+							<div id="button">Quick View</div>
+							<img class="image-box" src="FIXME" alt="Table6"/>
+							<span>$xyz</span>
+						</a>
+					</li>
 				</ul>
 			</div><!-- #content -->	
-		</div>	
+		</div><!-- #main -->	
 
-		<footer>
+		<footer id="footer-primary">
 			<div class="contain">
-				<ul role="navigation" class="footermenu">
+				<ul role="navigation">
 					<li><a href="FIXME">Follow us on Twitter</a></li>
 					<li><a href="FIXME">Like us on Facebook</a></li>
 				</ul>
 				
-				<ul role="navigation" class="footermenu">
+				<ul role="navigation">
 					<li><a href="FIXME">Philosophy</a></li>
 					<li><a href="FIXME">Privacy Policy</a></li>
 					<li><a href="FIXME">Shipping &amp; Returns</a></li>
 					<li><a href="FIXME">F.A.Q.s</a></li>
 				</ul>
 				
-				<ul role="navigation" class="footermenu">
+				<ul role="navigation">
 					<li><a href="#">Contact Us</a></li>
-					<li><a href="FIXME">800.555.12345</a></li>
+					<li><a href="tel:80055512345">800.555.12345</a></li>
 				</ul>
-				<a class="footer" href="/">Messina : Statements of Fashion</a>
+				<a id="footer-logo" href="#"> 
+					<span class="hidden">Messina : Statements of Fashion</span>
+				</a>
 			</div>
 		</footer>
 </body>			

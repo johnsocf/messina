@@ -130,21 +130,76 @@ margin:20px 10px 20px 0;
 }
 
 /*Kitchen Page Content*/
+.tables h3{
+}
+#content .tables a h2{
+}
+.image-box{
+	width:100%;
+	position:absolute;
+	left:0;
+}
+#content ul.tables{
+	list-style-type: none;
+	text-decoration: none;
+}
 
-.tables ul{
-	width:233.33;
-	list-style-type:none;
+#content ul.tables li a{
+	width:220px;
+	height:220px;
 	display:block;
 	float:left;
-}
-.tables ul li a h2, h3{
-	list-style-type:none;
-}
-.tables ul li{
 	display:inline;
+	font-size:55%;
+	position:relative;
 }
-.tables ul li a{
+#content ul.tables li a h2{
+	width: 100%
+	text-align:center;
+	display:none;
+	position:absolute;
+}
+#content ul.tables li a:hover h2{
 	display:block;
+	margin-top:auto;
+	margin-left:auto;
+	/*position:absolute;
+	margin-top:140px;
+	margin-left:50px;*/
+}
+#button{
+	height:25px;
+	width:110px;
+	background-color:#fff;
+	border:1px solid #000;
+	margin:70% auto 0;
+}
+#content ul.tables li a #button {
+	display:none;
+	position:absolute;
+}
+#content ul.tables li a:hover #button {
+	display:block;
+	margin-top:auto;
+	margin-left:auto;
+	/*position:absolute;
+	margin-top:140px;
+	margin-left:50px;*/
+}
+#content ul.tables li a span{
+	background-color: #000;
+	position:absolute;
+	width:100%
+	text-align:center;
+	display:none;
+}
+#content ul.tables li a:hover span {
+	display:block;
+	margin-top:auto;
+	margin-left:auto;
+	/*position:absolute;
+	margin-top:140px;
+	margin-left:50px;*/
 }
 
 /*Sidebar*/
