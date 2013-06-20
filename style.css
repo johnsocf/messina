@@ -48,7 +48,7 @@ nav a{
 	text-decoration:none;
 	text-transform:uppercase;
 	font-family: 'junction_regularregular', sans-serif;
-	color:#a6a6a6;
+	color:rgb(220,220,220);
 	line-height:40px;
 	display:block;
 }
