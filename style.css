@@ -4,10 +4,10 @@ body {
 	margin:0;
 	padding:0;
 }
-header{
+#main-header{
 	margin: 0 auto;
 }
-a#mainlogo{
+a#main-logo{
 	background: url(images/Messinalogo.png) no-repeat;
 	margin:0 auto;
 	padding:0px;
@@ -124,7 +124,7 @@ margin:20px 10px 20px 0;
 	list-style-type:none;
 	padding:0px;
 	margin-left:0px;
-	font-size: 87%;
+	font-size: 87.5%;
 }
 #sidebar ul a{
 	color:rgb(178,177,193);
@@ -140,7 +140,7 @@ footer ul li a:hover:before{
 	color:#a6a6a6;
 }
 #sidebar ul a,
-#about-footer ul li a{
+#footer-primary ul li a{
 	font-family:"Georgia", serif;
 	font-style:italic;
 	display:block;
@@ -148,7 +148,7 @@ footer ul li a:hover:before{
 }
 #search input{
 	font-family: 'junctionregularRegular', Arial, sans-serif;
-	font-size: 14px;
+	font-size: 87.5%px;
 	color: #aaa9ba;
 	background: #ffffff;
 	border:1px solid #aaa9ba;
@@ -168,12 +168,12 @@ footer ul li a:hover:before{
 	margin-right:0px;
 	float:right;
 }
-.menu{
+#sidebar h1{
 	height:20px;
 	width:234px;
 	margin-top:46px;
 	margin-left:0px;
-	font-size:87%;
+	font-size:87.5%;
 	border-bottom:1px solid gray;
 }
 footer{ 
@@ -195,7 +195,7 @@ footer{
 );
 
 }
-#about-footer ul{
+#footer-primary ul{
 	list-style-type:none;
 	width:220px;
 	margin:0;
@@ -204,10 +204,10 @@ footer{
 	padding:0 auto;
 	margin:0 auto;
 }
-#about-footer ul li{
+#footer-primary ul li{
 	display:inline;
 }
-#about-footer ul li a{
+#footer-primary ul li a{
 	padding:5px 5px;
 	margin:0;
 	font-size: 81.25%;
