@@ -127,12 +127,11 @@ margin:20px 10px 20px 0;
 	font-size: 87%;
 }
 #sidebar ul a{
-	color:rgb(178,177,184);
+	color:rgb(178,177,193);
 	margin:10px 0px;
 }
 #sidebar ul li a:hover:before, 
 footer ul li a:hover:before{
-	color:rgb (178,177,184);
 	content: "\00BB   ";
 	margin-left: -10.8px;
 	position: absolute;
@@ -209,11 +208,10 @@ footer{
 	display:inline;
 }
 #about-footer ul li a{
-	color:#4c4c4c;
 	padding:5px 5px;
 	margin:0;
 	font-size: 81.25%;
-	color:rgb (178,177,184);
+	color:rgb(76,76,76);
 	text-indent: 0px;
 }
 #footer-logo{
