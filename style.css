@@ -22,7 +22,7 @@ body {
 
 /*Global styles*/
 
-h2{
+#content h2{
 	margin:0;
 	padding:0;
 }
@@ -75,6 +75,7 @@ nav a:hover, nav a:active{
 }
 
 /*Main Content*/
+/*About-Page Content*/
 
 #main{
 	margin-top:40px;
@@ -128,6 +129,24 @@ vertical-align:text-top;
 margin:20px 10px 20px 0;
 }
 
+/*Kitchen Page Content*/
+
+.tables ul{
+	width:233.33;
+	list-style-type:none;
+	display:block;
+	float:left;
+}
+.tables ul li a h2, h3{
+	list-style-type:none;
+}
+.tables ul li{
+	display:inline;
+}
+.tables ul li a{
+	display:block;
+}
+
 /*Sidebar*/
 
 #sidebar{
@@ -165,7 +184,7 @@ margin:20px 10px 20px 0;
 }
 #search input[type=text]{
 	width:140px;
-	height:30px;
+	height:34px;
 	line-height:30px;
 	margin:0;
 	padding:0;
