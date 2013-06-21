@@ -130,7 +130,7 @@ margin:20px 10px 20px 0;
 }
 
 /*Kitchen Page Content*/
-.image-box{
+a.image-box{
 	width:100%;
 	position:absolute;
 	left:0;
@@ -169,7 +169,7 @@ margin:20px 10px 20px 0;
 	width:110px;
 	background-color:#fff;
 	border:1px solid #000;
-	margin:120px auto 0 auto;
+	margin:60px auto 0 auto;
 	display:none;
 }
 #content ul.tables li a:hover span#button {
@@ -179,10 +179,12 @@ margin:20px 10px 20px 0;
 	width:100%;
 	text-align:center;
 	display:none;
-	margin-top:18px;
+	margin-top:0px;
 }
 #content ul.tables li a:hover span {
 	display:block;
+	position:absolute;
+	margin-top:0px;
 	/*position:absolute;
 	margin-top:140px;
 	margin-left:50px;*/
