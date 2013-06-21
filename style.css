@@ -135,12 +135,20 @@ a.image-box{
 	position:absolute;
 	left:0;
 	top:0;
+	margin:0;
+	padding:0;
 }
 #content ul.tables{
 	list-style-type: none;
 	text-decoration: none;
+	margin:0;
+	padding:0;
 }
-
+#content ul.tables:after{
+	content:"";
+	display: table;
+	clear: both;
+}	
 #content ul.tables li a{
 	width:220px;
 	height:220px;
