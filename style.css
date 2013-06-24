@@ -174,8 +174,10 @@ a.image-box{
 	width: 100%;
 	text-align:center;
 	display:none;
-	margin-top:14px;
+	margin-top:7px;
 	font-size:77%;
+	font-weight:normal;
+	letter-spacing: 1px;
 }
 #content ul.tables li a:hover h2{
 	display:block;
@@ -189,12 +191,13 @@ a.image-box{
 	width:110px;
 	background-color:#fff;
 	border:1px solid #000;
-	margin:130px auto 54px;
+	margin:138px auto 54px;
 	margin-left:54px;
 	display:none;
-	line-height: 25px;
-	font-size: 100%;
+	line-height: 27px;
+	font-size: 75%;
 	color:#000;
+	text-transform: uppercase;
 }
 #content ul.tables li a:hover span#button {
 	display:block;
@@ -204,8 +207,9 @@ a.image-box{
 	width:100%;
 	text-align:center;
 	display:none;
-	margin-top:185px;
+	margin-top:200px;
 	font-size:65%;
+	letter-spacing: .75px;
 }
 #content ul.tables li a:hover span {
 	display:block;
