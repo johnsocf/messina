@@ -135,14 +135,15 @@ a.image-box{
 	position:absolute;
 	left:0;
 	top:0;
-	margin:0;
-	padding:0;
+	margin:0 auto;
+	padding:0 auto;
 }
 #content ul.tables{
 	list-style-type: none;
 	text-decoration: none;
 	margin:0;
 	padding:0;
+	margin-bottom: 150px;
 }
 #content ul.tables:after{
 	content:"";
@@ -157,16 +158,17 @@ a.image-box{
 	display:inline;
 	position:relative;
 	text-decoration: none;
-	color:#000;
+	color:#fff;
+	margin:0;
+	padding:0;
 }
 #content ul.tables li a:hover{
 	background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,0.45) 100%); /* FF3.6+ */
 	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0)), color-stop(1%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.45))); /* Chrome,Safari4+ */
 	background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.45) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.45) 100%); /* Opera 12+ */
-	background: -ms-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.45) 100%); /* IE10+ */
 	background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.45) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#73000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	margin:0;
+	padding:0;
 }
 #content ul.tables li a h2{
 	width: 100%;
@@ -187,26 +189,27 @@ a.image-box{
 	width:110px;
 	background-color:#fff;
 	border:1px solid #000;
-	margin:130px auto 0 auto;
+	margin:130px auto 54px;
 	margin-left:54px;
 	display:none;
 	line-height: 25px;
 	font-size: 100%;
+	color:#000;
 }
 #content ul.tables li a:hover span#button {
 	display:block;
+	position:absolute;
 }
 #content ul.tables li a span{
 	width:100%;
 	text-align:center;
 	display:none;
-	margin-top:0px;
+	margin-top:185px;
 	font-size:65%;
 }
 #content ul.tables li a:hover span {
 	display:block;
 	position:absolute;
-	margin-top:180px;
 	/*position:absolute;
 	margin-top:140px;
 	margin-left:50px;*/
