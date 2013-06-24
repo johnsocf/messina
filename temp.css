@@ -5,9 +5,6 @@ body {
 	padding:0;
 	font-size:16px;
 }
-#quickview-Big-Sir{
-	
-}
 .quickview-box{
 	display:block;
 	border-radius:15px;
@@ -69,21 +66,21 @@ body {
 	padding:20px 20px;
 	margin:0;
 }
-#quickview-Big-Sir h3{
+.quickview-box h3{
 	font-weight: normal;
 	padding:0px 20px;
 	margin:0;
 }
-#quickview-Big-Sir p{
+.quickview-box p{
 	font-size:87.5%;
 	padding:0px 20px;
 }
-#quickview-Big-Sir ul{
+.quickview-box ul{
 	margin:0;
 	padding:0 0 0px 20px;
 	font-size:87.5%;
 }
-#quickview-Big-Sir ul li{
+.quickview-box ul li{
 	list-style-type: none;
 	display:block;
 }
@@ -105,11 +102,9 @@ body {
 	text-align:center;
 	font-size:87.5%;
 	color:rgb(155,137,139);
+	display:block;
+	text-decoration: none;
 }
-/*
-$('#button').click(function() {
-  $('#book').show('slow', function() {
-    // Animation complete.
-  });
-});
-*/
+#quickview-Big-Sir{
+	position:relative;
+}
