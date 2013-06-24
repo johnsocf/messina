@@ -158,6 +158,7 @@ a.image-box{
 	display:inline;
 	position:relative;
 	text-decoration: none;
+	font-family: 'junction_regularregular', sans-serif;
 	color:#fff;
 	margin:0;
 	padding:0;
@@ -177,7 +178,7 @@ a.image-box{
 	margin-top:7px;
 	font-size:77%;
 	font-weight:normal;
-	letter-spacing: 1px;
+	letter-spacing: .8px;
 }
 #content ul.tables li a:hover h2{
 	display:block;
@@ -194,7 +195,7 @@ a.image-box{
 	margin:138px auto 54px;
 	margin-left:54px;
 	display:none;
-	line-height: 27px;
+	line-height: 29px;
 	font-size: 75%;
 	color:#000;
 	text-transform: uppercase;
