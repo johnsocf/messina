@@ -137,82 +137,103 @@ a.image-box{
 	top:0;
 	margin:0 auto;
 	padding:0 auto;
+	z-index:1;
 }
-#content ul.tables{
+/*#product a.image-box:hover img{
+	z-index:-100;
+}*/
+#product{
 	list-style-type: none;
 	text-decoration: none;
 	margin:0;
 	padding:0;
-	margin-bottom: 150px;
 }
-#content ul.tables:after{
-	content:"";
-	display: table;
-	clear: both;
-}	
-#content ul.tables li a{
+#product li{
 	width:220px;
 	height:220px;
-	display:block;
 	float:left;
 	display:inline;
+	margin:0 20px 20px 0;
+	padding:0;
+}
+#product li:nth-of-type(3), #product li:nth-of-type(6){
+	margin:0 0 20px 0;
+}
+#product li:nth-of-type(4){
+	margin:0 20px 20px 0;
+}
+#product li a{
+	display:block;
 	position:relative;
 	text-decoration: none;
 	font-family: 'junction_regularregular', sans-serif;
-	color:#fff;
+	color:#FFF;
 	margin:0;
 	padding:0;
 }
-#content ul.tables li a:hover{
+#product li a:hover img{
+	position:relative;
+	z-index: -1;
+}
+#product li a:hover{
 	background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,0.45) 100%); /* FF3.6+ */
 	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0)), color-stop(1%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.45))); /* Chrome,Safari4+ */
 	background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.45) 100%); /* Chrome10+,Safari5.1+ */
 	background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.45) 100%); /* W3C */
 	margin:0;
 	padding:0;
+	position:absolute;
+	z-index:1;
 }
-#content ul.tables li a h2{
+#product li a h2{
 	width: 100%;
 	text-align:center;
 	display:none;
-	margin-top:7px;
+	margin-top:12px;
 	font-size:77%;
 	font-weight:normal;
 	letter-spacing: .8px;
 }
-#content ul.tables li a:hover h2{
+#product li a:hover h2{
 	display:block;
 	position:absolute;
 	/*position:absolute;
 	margin-top:140px;
 	margin-left:50px;*/
 }
-#content ul.tables li a span#button{
+#product li a span#button{
 	height:25px;
 	width:110px;
 	background-color:#fff;
 	border:1px solid #000;
-	margin:138px auto 54px;
-	margin-left:54px;
+	position:absolute;
+	top:60%;
+	left:24.75%;
 	display:none;
 	line-height: 29px;
 	font-size: 75%;
 	color:#000;
+	text-align:center;
 	text-transform: uppercase;
-}
-#content ul.tables li a:hover span#button {
-	display:block;
 	position:absolute;
 }
-#content ul.tables li a span{
+#product li a:hover span#button {
+	display:block;
+}
+#product li a p{
 	width:100%;
 	text-align:center;
 	display:none;
-	margin-top:200px;
-	font-size:65%;
+	margin-top:0px;
+	margin-left:0px;
+	postion:absolute;
+	top:85%;
+	left:24.75%;
+	font-size:95%;
 	letter-spacing: .75px;
+	color:#FFF;
 }
-#content ul.tables li a:hover span {
+#product li a:hover p{
 	display:block;
 	position:absolute;
 	/*position:absolute;
