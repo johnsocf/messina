@@ -186,13 +186,13 @@ a.image-box{
 	z-index:1;
 }
 #product li a h2{
-	width: 100%;
+	width:100%;
 	text-align:center;
 	display:none;
 	margin-top:12px;
 	font-size:77%;
 	font-weight:normal;
-	letter-spacing: .8px;
+	letter-spacing:.8px;
 }
 #product li a:hover h2{
 	display:block;
@@ -210,8 +210,8 @@ a.image-box{
 	top:60%;
 	left:24.75%;
 	display:none;
-	line-height: 29px;
-	font-size: 75%;
+	line-height:29px;
+	font-size:75%;
 	color:#000;
 	text-align:center;
 	text-transform: uppercase;
@@ -224,13 +224,12 @@ a.image-box{
 	width:100%;
 	text-align:center;
 	display:none;
-	margin-top:0px;
-	margin-left:0px;
-	postion:absolute;
+	margin:0;
+	position:absolute;
 	top:85%;
 	left:24.75%;
 	font-size:95%;
-	letter-spacing: .75px;
+	letter-spacing:.75px;
 	color:#FFF;
 }
 #product li a:hover p{
