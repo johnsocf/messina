@@ -7,9 +7,9 @@ body {
 }
 .quickview-box{
 	display:block;
-	border-radius:10px;
-	-webkit-border-radius:10px;
-	-moz-border-radius:10px;
+	border-radius:12px;
+	-webkit-border-radius:12px;
+	-moz-border-radius:12px;
 	height:420px;
 	width:418px;
 	border:1px solid rgb(158,158,158);
@@ -116,13 +116,13 @@ body {
 	margin:10px 0;
 }
 .quickview-box p{
-	font-size:87.5%;
+	font-size:100%;
 	padding:0;
 }
 .quickview-box ul{
 	margin:0;
 	padding:0;
-	font-size:87.5%;
+	font-size:100%;
 }
 .quickview-box ul li{
 	list-style-type: none;
@@ -130,7 +130,7 @@ body {
 }
 #cost{
 	position:absolute;
-	margin:0 315px;
+	margin:12px 315px;
 	text-transform: uppercase;
 	font-size: 120%;
 	padding:0;
@@ -138,13 +138,13 @@ body {
 #add-button{
 	position:absolute;
 	height:28px;
-	width:122px;
+	width:120px;
 	border:2px solid rgb(211,211,211);
-	margin:30px 280px;
+	margin:42px 280px;
 	line-height: 30px;
 	text-transform: uppercase;
 	text-align:center;
-	font-size:87.5%;
+	font-size:100%;
 	color:rgb(155,137,139);
 	display:block;
 	text-decoration: none;
