@@ -423,22 +423,15 @@ footer ul li a:hover:before{
 #quickview-image-box{
 	height:204px;
 	width:420px;
-}
-#quickview-main-image{
-	padding:0;
-	margin:0;
-	top:0;
-	right:0;
-	position:absolute;
 	overflow:hidden;
 }
-#quickview-zoom-image{
+#quickview-main-image-Big-Sir{
 	height:204px;
 	width:420px;
 	padding:0;
 	margin:0;
+	overflow: hidden;
 	position:absolute;
-	z-index: 3;
 }
 #quickview-box h3{
 	font-weight: normal;
