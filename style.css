@@ -420,6 +420,9 @@ footer ul li a:hover:before{
 	width:420px;
 	overflow:hidden;
 	display:block;
+	width:auto;
+	max-width: 100%;
+	position:absolute;
 }
 #quickview-main-image-Big-Sir{
 	height:204px;
