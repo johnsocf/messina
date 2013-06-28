@@ -403,9 +403,8 @@ footer ul li a:hover:before{
    position: absolute;
    right:97%;
    top: 90px;
-   width: 98;
-   height: 98;
-   margin-left:10px;
+   width: 23px;
+   height: 23px;
    background-color: #FFF;
    transform:rotate(145deg) skew(20deg,0deg);
    -ms-transform:rotate(145deg) skew(20deg,0deg);
@@ -414,16 +413,13 @@ footer ul li a:hover:before{
    -webkit-box-shadow: 3px 3px 4px 0px rgb(158,158,158);
    box-shadow: 3px 3px 4px 0px rgb(158,158,158);
    border:0px solid rgb(158,158,158);
-   border-top: 13px solid transparent;
-   border-right: 26px solid #FFF;
-   border-bottom: 13px solid transparent;
-   z-index: 1;
 } 
 
 #quickview-image-box{
 	height:204px;
 	width:420px;
 	overflow:hidden;
+	display:block;
 }
 #quickview-main-image-Big-Sir{
 	height:204px;
