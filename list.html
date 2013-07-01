@@ -130,33 +130,20 @@
 				</a>
 			</div>
 		</footer>
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+ <script>
+ 		var $button = $('#button');
+ 		var $quickview = $('#quickview');
+
+ $button.click(function(){
+ 	event.stopPropagation();
+ 	var position = (($this).parents("li")).position();  // ($this).parents("li");
+	 $quickview.css({left:position.left+240px}); 
+ });
+
+ </script>
 
 </body>			
 </html>	
-
-<!-- <script>
-$('#button').click(function() {
-  $('.quickview-box').toggle('slow', function() {
-    // Animation complete.
-  });
-});
-</script> -->
-
-<!-- <script>
-	var $button = $("#button");
-	var $quickview = $(".quickview-box");
-
-$(document).ready(function(){
-	$button.click(function(){
-	$quickview.hide("slow");
-	}
-	);
-	$button.click(function(){
-	$quickview.show("slow");
-	}
-	);
-	}
-);
-
-</script> -->
 
