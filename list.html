@@ -134,16 +134,17 @@
 
  <script>
  		var $button = $('.button');
- 		var $quickview = $('#quickview');
+ 		var $quickView = $('#quickview');
 
  $button.click(function(event){
  	event.stopPropagation();
  	event.preventDefault();
  	var position = $(this).parents("li").position();  // ($this).parents("li");
-	 $quickview.css({left: position.left + 240});
+	$quickView.css({left: position.left + 240});
 
-	// var x = (($this).parents("li")).position().left + 240px;
-	// var y = (($this).parents("li")).position().top;
+	// var qvBox = (($this).parents("li")).position();
+	// var x = qvBox.left + 240px;
+	// var y = qvBox.top;
 	// $quickview.css({left:x ,top:y}); 
 
  });
