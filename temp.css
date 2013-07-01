@@ -5,7 +5,7 @@ body {
 	padding:0;
 	font-size:16px;
 }
-.quickview-box{
+#quickview-box{
 	display:block;
 	border-radius:12px;
 	-webkit-border-radius:12px;
@@ -22,8 +22,9 @@ body {
 	color:rgb(119,93,93);
 	background-color: #FFF;
 	padding:20px;
+	position:absolute;
 }
-.quickview-box:after {
+#quickview-box:after {
    content:"";
    position: absolute;
    right:97%;
@@ -110,21 +111,21 @@ body {
 	padding:0;
 	margin:0;
 }
-.quickview-box h3{
+#quickview-box h3{
 	font-weight: normal;
 	padding:0;
 	margin:10px 0;
 }
-.quickview-box p{
+#quickview-box p{
 	font-size:100%;
 	padding:0;
 }
-.quickview-box ul{
+#quickview-box ul{
 	margin:0;
 	padding:0;
 	font-size:100%;
 }
-.quickview-box ul li{
+#quickview-box ul li{
 	list-style-type: none;
 	display:block;
 }
@@ -148,7 +149,4 @@ body {
 	color:rgb(155,137,139);
 	display:block;
 	text-decoration: none;
-}
-#quickview-Big-Sir{
-	position:relative;
 }
