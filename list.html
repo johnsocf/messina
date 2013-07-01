@@ -139,7 +139,12 @@
  $button.click(function(){
  	event.stopPropagation();
  	var position = (($this).parents("li")).position();  // ($this).parents("li");
-	 $quickview.css({left:position.left+240px}); 
+	 $quickview.css({left: position.left + 240px}); 
+
+	// var x = (($this).parents("li")).position().left + 240px;
+	// var y = (($this).parents("li")).position().top;
+	// $quickview.css({left:x ,top:y}); 
+
  });
 
  </script>
