@@ -376,9 +376,9 @@ footer ul li a:hover:before{
 	top:-999px;
 }
 
-/*Quickview-box*/
+/*quickview*/
 
-#quickview-box{
+#quickview{
 	display:block;
 	border-radius:12px;
 	-webkit-border-radius:12px;
@@ -398,13 +398,13 @@ footer ul li a:hover:before{
 	top:0;
 	right:0;
 }
-#quickview-box:after {
+#quickview:after {
    content:"";
    position: absolute;
-   right:97%;
+   right:97.5%;
    top: 90px;
-   width: 23px;
-   height: 23px;
+   width: 21px;
+   height: 21px;
    background-color: #FFF;
    transform:rotate(145deg) skew(20deg,0deg);
    -ms-transform:rotate(145deg) skew(20deg,0deg);
@@ -415,28 +415,25 @@ footer ul li a:hover:before{
    border:0px solid rgb(158,158,158);
 } 
 
-#quickview-image-box{
+#quickview-zoom{
 	height:204px;
 	width:420px;
+	position:absolute;
+	top:18px;
+	left:18px;
 	overflow:hidden;
 	display:block;
 }
-#quickview-main-image-Big-Sir{
-	height:204px;
-	width:420px;
-	padding:0;
-	margin:0;
-	overflow:hidden;
-	position:absolute;
-}
-#quickview-box h3{
+#quickview h1{
 	font-weight: normal;
 	padding:0;
-	margin:10px 0;
+	margin-top:220px;
 	color:rgb(67,66,88);
+	font-size:112.5%;
+	letter-spacing:1px;
 }
-#quickview-box p{
-	font-size:100%;
+#quickview p{
+	font-size:87.5%;
 	padding:0;
 	column-count: 1; 
 	text-align:left;
@@ -444,46 +441,60 @@ footer ul li a:hover:before{
 	-webkit-column-count: 1;
 	-moz-column-count: 1; 
 	vertical-align:text-top;
-	margin:15px 0px 0px 0;
+	margin:18px 0px 0px 0;
 	font-size:90%;
 	letter-spacing: 1px;
 	color:rgb(103,103,103);
 }
-#quickview-box ul{
+#quickview ul{
+	font-size:87.5%;
 	margin:0;
 	padding:0;
 	font-size:100%;
-	margin:30px 0;
+	float:left;
+	position:absolute;
+	top:81%;
 	font-size:90%;
 	letter-spacing: 1.2px;
 	color:rgb(103,103,103);
 }
-#quickview-box ul li{
+#quickview ul li{
 	list-style-type: none;
 	display:block;
 }
-#cost{
-	position:absolute;
-	margin:32px 325px;
+#cart-form{
+	float:right;
+}
+#cart-form p{
+	font-family: 'junctionregularRegular', Arial, sans-serif;
 	text-transform: uppercase;
 	font-size: 120%;
 	padding:0;
+	margin:45px 0 0 0;
 	color:rgb(103,103,103);
+	text-align:center;
 }
-#add-button{
-	position:absolute;
-	top:360px;
-	height:28px;
+#cart-form input[type=submit]{
+	font-family: 'junctionregularRegular', Arial, sans-serif;
 	width:120px;
+	height:28px;
 	border:2px solid rgb(217,227,232);
-	margin:42px 290px;
-	line-height: 30px;
+	line-height: 23px;
 	text-transform: uppercase;
 	text-align:center;
 	font-size:100%;
 	color:rgb(144,152,155);
 	display:block;
 	text-decoration: none;
+	font-weight:light;
+	margin:5px;
 }
-
-
+#cart-form input{
+	font-family: 'junctionregularRegular', Arial, sans-serif;
+	font-size: 100%;
+	color:rgb(144,152,155);
+	background: #ffffff;
+	border:1px solid #aaa9ba;
+	margin:0;
+	padding:2px;
+}
