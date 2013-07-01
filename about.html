@@ -2,11 +2,12 @@
 <html>
 	<head>
 		<title>About Messina</title>
+		<link href="style.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 
-		<header class="contain">
-			<a href="/"><h1>Messina/statements of Fashion</h1></a>
+		<header class="contain" id="main-header">
+			<a id="logo-primary" href="/"><h1 class="hidden">Messina/statements of Fashion</h1></a>
 		</header>
 	
 		<nav>
@@ -18,19 +19,14 @@
 			</ul>
 		</nav>	
 		
-		<div class="contain">
-			<div id="content">	
-				<h1>ABOUT</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
-				<h2>Heading 2</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
-			</div><!-- #content -->
+		<div class="contain" id="main">
 			<div id="sidebar">
-				<form>
+				<form id="search">
 					<input type="text" name="search" placeholder="Search..." />
-					<input type="submit" value="Search"/>
+					<input type="submit" value="search"/>
 				</form>
 						
+				<h1>About Messina</h1>	
 				<ul role="navigation">
 					<li><a href="FIXME">Philosophy</a></li>
 					<li><a href="FIXME">Privacy Policy</a></li>
@@ -38,13 +34,19 @@
 					<li><a href="FIXME">F.A.Q.s</a></li>
 				</ul>
 			</div><!-- #sidebar -->
-		</div>
+			<div id="content">	
+				<h2>ABOUT</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
+				<h3>Heading 2</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
+			</div><!-- #content -->
+		</div><!-- #main -->
 
-		<footer>
+		<footer id="footer-primary">
 			<div class="contain">
 				<ul role="navigation">
-					<li><a href="FIXME">Twitter</a></li>
-					<li><a href="FIXME">Facebook</a></li>
+					<li><a href="FIXME">Follow us on Twitter</a></li>
+					<li><a href="FIXME">Like us on Facebook</a></li>
 				</ul>
 				
 				<ul role="navigation">
@@ -56,11 +58,12 @@
 				
 				<ul role="navigation">
 					<li><a href="#">Contact Us</a></li>
-					<li><a href="FIXME">800.555.12345</a></li>
+					<li><a href="tel:80055512345">800.555.12345</a></li>
 				</ul>
-				<a href="/">Messina : Statements of Fashion</a>
+				<a id="footer-logo" href="#"> 
+					<span class="hidden">Messina : Statements of Fashion</span>
+				</a>
 			</div>
 		</footer>
-
 	</body>
 </html>
