@@ -42,7 +42,7 @@
 							<h2>Big Sir Dining Table</h2>
 							<p>&#36;1499</p>
 							<img class="image-box" src="images/table-image-Big-Sir.png" alt="Big Sir Dining Table"/>
-							<span id="button">Quick View</span>
+							<span class="button">Quick View</span>
 						</a>
 					</li>
 					<li>
@@ -50,7 +50,7 @@
 							<h2>Basque Honey</h2>
 							<p>&#36;xyz</p>
 							<img class="image-box" src="images/table-image-Basque-Honey.png" alt="Basque Honey"/>
-							<span id="button">Quick View</span>
+							<span class="button">Quick View</span>
 						</a>
 					</li>
 					<li>
@@ -58,7 +58,7 @@
 							<h2>Cucina</h2>
 							<p>&#36;xyz</p>
 							<img class="image-box" src="images/table-image-Cucina.png" alt="Cucina"/>
-							<span id="button">Quick View</span>
+							<span class="button">Quick View</span>
 						</a>
 					</li>
 					<li>
@@ -66,7 +66,7 @@
 							<h2>Arlington</h2>
 							<p>&#36;xyz</p>
 							<img class="image-box" src="images/table-image-Arlington.png" alt="Arlington"/>
-							<span id="button">Quick View</span>
+							<span class="button">Quick View</span>
 						</a>
 					</li>
 					<li>
@@ -74,7 +74,7 @@
 							<h2>Pacifica</h2>
 							<p>&#36;xyz</p>
 							<img class="image-box" src="images/table-image-Pacifica.png" alt="Pacifica"/>
-							<span id="button">Quick View</span>
+							<span class="button">Quick View</span>
 						</a>
 					</li>
 					<li>
@@ -82,7 +82,7 @@
 							<h2>Sideboard</h2>
 							<p>&#36;xyz</p>
 							<img class="image-box" src="images/table-image-Sideboard.png" alt="Sideboard"/>
-							<span id="button">Quick View</span>
+							<span class="button">Quick View</span>
 						</a>
 					</li>
 				</ol>
@@ -130,16 +130,17 @@
 				</a>
 			</div>
 		</footer>
- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+ <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 
  <script>
- 		var $button = $('#button');
+ 		var $button = $('.button');
  		var $quickview = $('#quickview');
 
- $button.click(function(){
+ $button.click(function(event){
  	event.stopPropagation();
- 	var position = (($this).parents("li")).position();  // ($this).parents("li");
-	 $quickview.css({left: position.left + 240px}); 
+ 	event.preventDefault();
+ 	var position = $(this).parents("li").position();  // ($this).parents("li");
+	 $quickview.css({left: position.left + 240});
 
 	// var x = (($this).parents("li")).position().left + 240px;
 	// var y = (($this).parents("li")).position().top;
