@@ -86,7 +86,7 @@
 						</a>
 					</li>
 				</ol>
-				<a id="quickview">
+				<a id="quickview" class="">
 					<h1>Big Sir Dining Table</h1>
 					<div id="quickview-zoom">
 						<img src="images/quickview-image-XL-Big-Sir.jpg" alt="Big Sir Dining Table in full resolution"/>
@@ -140,10 +140,21 @@
  	event.preventDefault();
  	$quickView.hide();
  	var position = $(this).parents("li").position();  // ($this).parents("li");
-	$quickView.css({left: position.left + 240, top: position.top});
-	$quickView.fadeIn(1000);
+	
+		var position = $(this).parents("li").position(); 
+		
+		
+	if (position.left >= 480) {												
 
+		$quickView.css({left: position.left - 480, top:position.top});
+		$quickView.fadeIn(100);
+	}
 
+	else {
+		
+		$quickView.css({left: position.left + 240, top: position.top});
+		$quickView.fadeIn(100);
+	}	
 	// var qvBox = (($this).parents("li")).position();
 	// var x = qvBox.left + 240px;
 	// var y = qvBox.top;
