@@ -137,10 +137,10 @@
  		var $quickView = $('#quickview');
 
  $button.click(function(event){
- 	event.stopPropagation();
  	event.preventDefault();
  	var position = $(this).parents("li").position();  // ($this).parents("li");
-	$quickView.css({left: position.left + 240});
+	$quickView.css({left: position.left + 240, top: position.top});
+	$quickView.fadeIn(1000);
 
 	// var qvBox = (($this).parents("li")).position();
 	// var x = qvBox.left + 240px;

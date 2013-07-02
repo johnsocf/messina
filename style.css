@@ -206,7 +206,7 @@ ol#product-list {
 	margin-top:140px;
 	margin-left:50px;*/
 }
-#product-list li a span#button{
+#product-list li a span.button{
 	height:25px;
 	width:110px;
 	background-color:#fff;
@@ -222,7 +222,7 @@ ol#product-list {
 	text-transform: uppercase;
 	position:absolute;
 }
-#product-list li a:hover span#button {
+#product-list li a:hover span.button {
 	display:block;
 }
 #product-list li a p{
@@ -379,7 +379,7 @@ footer ul li a:hover:before{
 /*quickview*/
 
 #quickview{
-	display:block;
+	display:none;
 	border-radius:12px;
 	-webkit-border-radius:12px;
 	-moz-border-radius:12px;
