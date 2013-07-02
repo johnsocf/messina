@@ -403,8 +403,8 @@ footer ul li a:hover:before{
    position: absolute;
    right:97.5%;
    top: 90px;
-   width: 21px;
-   height: 21px;
+   width: 22px;
+   height: 22px;
    background-color: #FFF;
    transform:rotate(145deg) skew(20deg,0deg);
    -ms-transform:rotate(145deg) skew(20deg,0deg);
@@ -419,8 +419,8 @@ footer ul li a:hover:before{
    position: absolute;
    right:-2.41%;
    top: 90px;
-   width: 21px;
-   height: 21px;
+   width: 22px;
+   height: 22px;
    background-color: #FFF;
    transform:rotate(326deg) skew(20deg,0deg);
    -ms-transform:rotate(326deg) skew(20deg,0deg);
