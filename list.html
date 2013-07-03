@@ -86,7 +86,7 @@
 						</a>
 					</li>
 				</ol>
-				<a id="quickview" class="right">
+				<a id="quickview">
 					<h1>Big Sir Dining Table</h1>
 					<div id="quickview-zoom">
 						<img src="images/quickview-image-XL-Big-Sir.jpg" alt="Big Sir Dining Table in full resolution"/>
@@ -135,19 +135,21 @@
  <script>
  		var $button = $('.button');
  		var $quickView = $('#quickview');
- 		var $productList = $('#product-list a');
+ 		// var $productList = $('#product-list a');
 
 		$button.click(function(event){
 			event.preventDefault();
-			$quickView.hide('.product-list a.hover');
-			$quickView.removeClass('.right');
-			var position = $(this).parents("li").addClass('hover').position();
-
+			var $li = $(this).parents("li");
+			var position = $li.position();
+			$li.removeClass('right');
 			var left = position.left+240;
 			if (left > 480) {
-			left = 0;
-			$quickView.addClass('right');
+				left = 0;
+				$quickView.addClass('right');
 			}
+			$quickView.css({"left":left, "top": position.top}).fadeIn(100);
+			
+		});
 
 
 			  // ($this).parents("li");
@@ -196,7 +198,7 @@
 	// var y = qvBox.top;
 	// $quickview.css({left:x ,top:y}); 
 
- });
+ //});
 
  </script>
 
