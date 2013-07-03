@@ -86,7 +86,7 @@
 						</a>
 					</li>
 				</ol>
-				<a id="quickview" class="left-arrow">
+				<a id="quickview" class="right">
 					<h1>Big Sir Dining Table</h1>
 					<div id="quickview-zoom">
 						<img src="images/quickview-image-XL-Big-Sir.jpg" alt="Big Sir Dining Table in full resolution"/>
@@ -135,30 +135,62 @@
  <script>
  		var $button = $('.button');
  		var $quickView = $('#quickview');
- 		var $leftArrow = $('.left-arrow');
- 		var $rightArrow = $('.right-arrow');
+ 		var $productList = $('#product-list a');
 
- $button.click(function(event){
- 	event.preventDefault();
- 	$quickView.hide();
- 	var position = $(this).parents("li").position();  // ($this).parents("li");
-		
-	if (position.left >= 480) {												
+		$button.click(function(event){
+			event.preventDefault();
+			$quickView.hide('.product-list a.hover');
+			$quickView.removeClass('.right');
+			var position = $(this).parents("li").addClass('hover').position();
 
-		$quickView.css({left: position.left - 480, top:position.top});
-		$quickView.fadeIn(100);
-		$quickView.removeClass('left-arrow');
-		$quickView.addClass('right-arrow');
+			var left = position.left+240;
+			if (left > 480) {
+			left = 0;
+			$quickView.addClass('right');
+			}
 
-	}
 
-	else {
+			  // ($this).parents("li");
+		// 	var left = position.left+240;
+		// 	if (left > 480) {
+		// 		left = 0;
+		// 		$quickView.addClass('right');
+		// 	}
+		// 	$quickView.css("left", left).css("top", position.top).fadeIn(100);
 
-		$quickView.css({left: position.left + 240, top: position.top});
-		$quickView.fadeIn(100);
-		$quickView.removeClass('right-arrow');
-		$quickView.addClass('left-arrow');
-	}	
+		// 	$quickView.mouseleave(function(){
+		// 		$quickView.fadeOut(500);
+		// 		$productList.removeClass('hover');
+		// 	});
+
+		// });	
+
+			// $quickview.hide();
+
+
+			// $quickView.css("left", left).css("top", position.top).fadeIn(100);
+			// $quickView.mouseleave(function() {
+
+			// // if (mouse position not over #product-list a.hover)	
+			// 	$quickView.fadeOut(500);
+			// 	$productList.removeClass('hover');
+
+
+	// if (position.left >= 480) {												
+
+	// 	$quickView.css({left: position.left - 480, top:position.top});
+	// 	$quickView.fadeIn(100);
+	// 	$quickView.removeClass('left-arrow');
+	// 	$quickView.addClass('right-arrow');
+	// }
+
+	// else {
+
+	// 	$quickView.css({left: position.left + 240, top: position.top});
+	// 	$quickView.fadeIn(100);
+	// 	$quickView.removeClass('right-arrow');
+	// 	$quickView.addClass('left-arrow');
+	// }	
 	// var qvBox = (($this).parents("li")).position();
 	// var x = qvBox.left + 240px;
 	// var y = qvBox.top;
