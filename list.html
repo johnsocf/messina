@@ -159,7 +159,9 @@
 			});
 
 			// mouseOUT, set timer, remove Class and fadeout.
-			$quickView.mouseout(function(hoverOut){
+
+			// $quickView.add($li)
+			$("#quickView, li").mouseout(function(hoverOut){
 				setTimeout(function(){
 					(200);
 				});
