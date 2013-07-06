@@ -161,9 +161,28 @@
 			// mouseOUT, set timer, remove Class and fadeout.
 			$quickView.mouseout(function(hoverOut){
 				setTimeout(function(){
-						$anchor.removeClass('hover');
-						$quickView.fadeOut(100);}, 200);
-			});
+					(200);
+				});
+				// var x = .get datapoint.
+				function fadeOut() {
+					$anchor.removeClass('hover');
+					$quickView.fadeOut(100);
+				};
+				fadeOut();
+
+				// function checkData() {
+				// 	$li.data("hover");
+				// };
+
+				// if (checkData() == true ){  fadeOut() }
+				// else {}
+ 
+				});
+
+			// 	setTimeout(function(){
+			// 		// if x not true{...}
+			// (fadeOut, 200);
+			// });
 
 			
 		});
