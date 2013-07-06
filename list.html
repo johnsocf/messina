@@ -155,23 +155,24 @@
 			// mouseEnter and data set var on the Li and a
 			$quickView.mouseenter(function(hoverState){
 				var checkHover = $li.data({"hover": true});
+				$('a').removeClass('hover');
 				$anchor.addClass('hover');
 			});
 
 			// mouseOUT, set timer, remove Class and fadeout.
 
 			// $quickView.add($li)
-			$("#quickView, li").mouseout(function(hoverOut){
+			$("#quickView, li img").mouseout(function(hoverOut){
 				setTimeout(function(){
-					(200);
+					(fadeOut(),200);
 				});
 				// var x = .get datapoint.
 				function fadeOut() {
 					$anchor.removeClass('hover');
 					$quickView.fadeOut(100);
 				};
-				fadeOut();
-
+			});	
+		});	
 				// function checkData() {
 				// 	$li.data("hover");
 				// };
@@ -179,7 +180,7 @@
 				// if (checkData() == true ){  fadeOut() }
 				// else {}
  
-				});
+				
 
 			// 	setTimeout(function(){
 			// 		// if x not true{...}
@@ -187,7 +188,7 @@
 			// });
 
 			
-		});
+		
 
 			// function checkHover() {
 			// 	$li.get(hoverState){
