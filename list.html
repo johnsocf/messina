@@ -135,21 +135,68 @@
  <script>
  		var $button = $('.button');
  		var $quickView = $('#quickview');
- 		// var $productList = $('#product-list a');
+ 		var $productList = $('#product-list a');
 
 		$button.click(function(event){
 			event.preventDefault();
 			var $li = $(this).parents("li");
+			var $anchor = $(this).parents("a");
 			var position = $li.position();
-			$li.removeClass('right');
+			// $productList.removeClass('hover');
+			$quickView.removeClass('right');
 			var left = position.left+240;
 			if (left > 480) {
 				left = 0;
 				$quickView.addClass('right');
 			}
 			$quickView.css({"left":left, "top": position.top}).fadeIn(100);
+
+
+			// mouseEnter and data set var on the Li and a
+			$quickView.mouseenter(function(hoverState){
+				var checkHover = $li.data({"hover": true});
+				$anchor.addClass('hover');
+			});
+
+			// mouseOUT, set timer, remove Class and fadeout.
+			$quickView.mouseout(function(hoverOut){
+				setTimeout(function(){
+						$anchor.removeClass('hover');
+						$quickView.fadeOut(100);}, 200);
+			});
+
 			
 		});
+
+			// function checkHover() {
+			// 	$li.get(hoverState){
+			// 	// if (hoverState = true){
+			// 	// 	$li.removeClass('hover');
+			// 	// 	$quickView.fadeOut(200);
+			// 	// }
+			// }
+			
+
+			// }
+			// $quickView.mouseLeave(function(fade){
+			// 	setTimeout("checkHover()",200);
+			// 		if checkHover !true {
+			// 			$li.removeClass('hover');
+			// 			$quickView.fadeOut(100);
+			// 		}
+			// 		// if checkHover = true, no action
+			// 		// 	else - remove hover class, and fadeout quickview. (if it's not true, ... remove class, etc.)
+			// })
+			
+
+
+			// $quickView.mouseleave(function(){
+			// 	if data("hover"=true){
+			// 		$quickView.fadeOut(100);
+			// 		$anchor.removeClass('hover');
+			// 	}
+			// 	else {}
+			
 
 
 			  // ($this).parents("li");
