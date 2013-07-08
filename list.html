@@ -160,12 +160,12 @@
 			$(this).data('hovering', false);
 		})
 		;
-		// $quickView.add('#product-list li')
+		// $quickView.add('#product-list li') - as it's within it, now.
 		$quickView.mouseleave(function () {
 			setTimeout(function () {
 				var $liHover = $('li.hover');
 				if (!$liHover.data('hovering')) {
-					$quickView.fadeOut(100, function () {
+					$quickView.fadeOut(500, function () {
 						$anchor.removeClass('hover', 100);
 					});
 					$li.remove($quickView);
