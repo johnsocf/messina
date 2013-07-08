@@ -38,7 +38,7 @@
 				<h1 class="hidden">Kitchen Tables</h1>
 				<ol id="product-list">
 					<li>
-						<a href="FIXME">
+						<a href="FIXME" class="list-item">
 							<h2>Big Sir Dining Table</h2>
 							<p>&#36;1499</p>
 							<img class="image-box" src="images/table-image-Big-Sir.png" alt="Big Sir Dining Table"/>
@@ -46,7 +46,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="FIXME">
+						<a href="FIXME" class="list-item">
 							<h2>Basque Honey</h2>
 							<p>&#36;xyz</p>
 							<img class="image-box" src="images/table-image-Basque-Honey.png" alt="Basque Honey"/>
@@ -54,7 +54,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="FIXME">
+						<a href="FIXME" class="list-item">
 							<h2>Cucina</h2>
 							<p>&#36;xyz</p>
 							<img class="image-box" src="images/table-image-Cucina.png" alt="Cucina"/>
@@ -62,7 +62,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="FIXME">
+						<a href="FIXME" class="list-item">
 							<h2>Arlington</h2>
 							<p>&#36;xyz</p>
 							<img class="image-box" src="images/table-image-Arlington.png" alt="Arlington"/>
@@ -70,7 +70,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="FIXME">
+						<a href="FIXME" class="list-item">
 							<h2>Pacifica</h2>
 							<p>&#36;xyz</p>
 							<img class="image-box" src="images/table-image-Pacifica.png" alt="Pacifica"/>
@@ -136,6 +136,7 @@
  		var $button = $('.button');
  		var $quickView = $('#quickview');
  		var $li = $('#product-list li');
+ 		var $anchor = $('#product-list a');
 
 		$button.click(function(event){
 			event.preventDefault();
@@ -149,7 +150,7 @@
 				$quickView.addClass('right');
 			}
 			$quickView.css({"left":left, "top": position.top}).fadeIn(100);
-			$li.append($('a #quickview'));
+			$(this).closest('li').append($quickView);
 		})
 		.parents('li') // now we have a jquery nodelist that contains all the LIs
 		.mouseenter(function () {
@@ -159,14 +160,15 @@
 			$(this).data('hovering', false);
 		})
 		;
+		// $quickView.add('#product-list li')
 		$quickView.mouseleave(function () {
 			setTimeout(function () {
 				var $liHover = $('li.hover');
 				if (!$liHover.data('hovering')) {
 					$quickView.fadeOut(500, function () {
-						$('#product-list a').removeClass('hover');
+						$anchor.removeClass('hover', 100);
 					});
-					$li.remove($('a #quickview'));
+					$li.remove($quickView);
 				}
 			}, 200);
 		});

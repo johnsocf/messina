@@ -168,7 +168,7 @@ ol#product-list {
 #product-list li:nth-of-type(4){
 	margin:0 20px 20px 0;
 }
-#product-list li a{
+#product-list li a.list-item{
 	display:block;
 	position:relative;
 	text-decoration: none;
@@ -199,9 +199,15 @@ ol#product-list {
 	font-weight:normal;
 	letter-spacing:1.5px;
 }
-#product-list li a:hover h2{
+#product-list li a:hover h2, #product-list li a.hover h2{
 	display:block;
 	position:absolute;
+	width:100%;
+	text-align:center;
+	margin-top:12px;
+	font-size:95%;
+	font-weight:normal;
+	letter-spacing:1.5px;
 	/*position:absolute;
 	margin-top:140px;
 	margin-left:50px;*/
@@ -222,7 +228,7 @@ ol#product-list {
 	text-transform: uppercase;
 	position:absolute;
 }
-#product-list li a:hover span.button {
+#product-list li a:hover span.button, #product-list li a.hover span.button{
 	display:block;
 }
 #product-list li a p{
@@ -238,7 +244,7 @@ ol#product-list {
 	color:#FFF;
 	font-weight: lighter;
 }
-#product-list li a:hover p{
+#product-list li a:hover p, #product-list li a.hover p{
 	display:block;
 	position:absolute;
 	/*position:absolute;
@@ -403,7 +409,7 @@ footer ul li a:hover:before{
 }
 
 #quickview{
-	display:none;
+	display:block;
 	width:418px;
 	height:420px;
 	color:rgb(119,93,93);
@@ -416,6 +422,7 @@ footer ul li a:hover:before{
 	-webkit-box-shadow: 0px 0px 9px #000000;
 	box-shadow: 0px 0px 9px #000000;
 	background-color: #FFF;
+	z-index:1;
 }
 #quickview:before {
 	content: "";
@@ -480,7 +487,7 @@ footer ul li a:hover:before{
 	-webkit-column-count: 1;
 	-moz-column-count: 1; 
 	vertical-align:text-top;
-	margin:18px 0px 0px 0;
+	margin:0px 0px 0px 0;
 	font-size:90%;
 	letter-spacing: 1px;
 	color:rgb(103,103,103);
@@ -509,7 +516,7 @@ footer ul li a:hover:before{
 	text-transform: uppercase;
 	font-size: 120%;
 	padding:0;
-	margin:45px 0 0 0;
+	margin:0px 0 0 0;
 	color:rgb(103,103,103);
 	text-align:center;
 }
