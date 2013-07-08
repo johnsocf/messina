@@ -168,7 +168,7 @@ ol#product-list {
 #product-list li:nth-of-type(4){
 	margin:0 20px 20px 0;
 }
-#product-list li a.list-item{
+#product-list li a{
 	display:block;
 	position:relative;
 	text-decoration: none;
@@ -409,7 +409,7 @@ footer ul li a:hover:before{
 }
 
 #quickview{
-	display:block;
+	display:none;
 	width:418px;
 	height:420px;
 	color:rgb(119,93,93);
@@ -499,12 +499,13 @@ footer ul li a:hover:before{
 	font-size:100%;
 	float:left;
 	position:absolute;
-	top:81%;
+	top:79%;
 	font-size:90%;
 	letter-spacing: 1.2px;
 	color:rgb(103,103,103);
 }
-#quickview ul li{
+#quickview ul li.quickview-menu{
+	height:0px;
 	list-style-type: none;
 	display:block;
 }

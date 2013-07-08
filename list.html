@@ -38,7 +38,7 @@
 				<h1 class="hidden">Kitchen Tables</h1>
 				<ol id="product-list">
 					<li>
-						<a href="FIXME" class="list-item">
+						<a href="FIXME">
 							<h2>Big Sir Dining Table</h2>
 							<p>&#36;1499</p>
 							<img class="image-box" src="images/table-image-Big-Sir.png" alt="Big Sir Dining Table"/>
@@ -46,7 +46,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="FIXME" class="list-item">
+						<a href="FIXME">
 							<h2>Basque Honey</h2>
 							<p>&#36;xyz</p>
 							<img class="image-box" src="images/table-image-Basque-Honey.png" alt="Basque Honey"/>
@@ -54,7 +54,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="FIXME" class="list-item">
+						<a href="FIXME">
 							<h2>Cucina</h2>
 							<p>&#36;xyz</p>
 							<img class="image-box" src="images/table-image-Cucina.png" alt="Cucina"/>
@@ -62,7 +62,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="FIXME" class="list-item">
+						<a href="FIXME">
 							<h2>Arlington</h2>
 							<p>&#36;xyz</p>
 							<img class="image-box" src="images/table-image-Arlington.png" alt="Arlington"/>
@@ -70,7 +70,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="FIXME" class="list-item">
+						<a href="FIXME">
 							<h2>Pacifica</h2>
 							<p>&#36;xyz</p>
 							<img class="image-box" src="images/table-image-Pacifica.png" alt="Pacifica"/>
@@ -86,24 +86,24 @@
 						</a>
 					</li>
 				</ol>
-				<a id="quickview">
+				<div id="quickview">
 					<h1>Big Sir Dining Table</h1>
 					<div id="quickview-zoom">
 						<img src="images/quickview-image-XL-Big-Sir.jpg" alt="Big Sir Dining Table in full resolution"/>
 					</div>
 					<p>Like its namesake, this casual, contemporary dining group is big, bold and natural. The rustic beauty of Big Sur lies in it&apos;s solid European white oak with naturally occurring splits, cracks and knots.</p>
 					<ul>
-						<li> 65&quot; &times; 37.5&quot; &times; 30&quot;</li>
-						<li>Solid white oak</li>
-						<li>Seats up to six</li>
-						<li>Made in Poland</li>
+						<li class="quickview-menu"> 65&quot; &times; 37.5&quot; &times; 30&quot;</li>
+						<li class="quickview-menu">Solid white oak</li>
+						<li class="quickview-menu">Seats up to six</li>
+						<li class="quickview-menu">Made in Poland</li>
 					</ul>
 					<form id="cart-form">
 						<p id="cost">&#36;1499</p>	
 						<input type="hidden">
 						<input type="submit" value="add to cart" />
 					</form>	
-				</a><!-- #quickview-box-->
+				</div><!-- #quickview-box-->
 			</div><!-- #content -->	
 		</div><!-- #main -->	
 
@@ -165,7 +165,7 @@
 			setTimeout(function () {
 				var $liHover = $('li.hover');
 				if (!$liHover.data('hovering')) {
-					$quickView.fadeOut(500, function () {
+					$quickView.fadeOut(100, function () {
 						$anchor.removeClass('hover', 100);
 					});
 					$li.remove($quickView);
