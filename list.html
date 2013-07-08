@@ -140,7 +140,7 @@
 
 		$button.click(function(event){
 			event.preventDefault();
-			var position = $(this).parents("a").addClass("hover").
+			var position = $(this).parents("a").addClass("active").
 			position();
 			// $productList.removeClass('hover');
 			$quickView.removeClass('right');
@@ -163,10 +163,10 @@
 		// $quickView.add('#product-list li') - as it's within it, now.
 		$quickView.mouseleave(function () {
 			setTimeout(function () {
-				var $liHover = $('li.hover');
-				if (!$liHover.data('hovering')) {
+				var $aHover = $('a.active');
+				if (!$aHover.data('hovering')) {
 					$quickView.fadeOut(500, function () {
-						$anchor.removeClass('hover', 100);
+						$anchor.removeClass('active', 100);
 					});
 					$li.remove($quickView);
 				}
