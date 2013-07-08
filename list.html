@@ -135,13 +135,12 @@
  <script>
  		var $button = $('.button');
  		var $quickView = $('#quickview');
- 		var $productList = $('#product-list a');
+ 		var $li = $('#product-list li');
 
 		$button.click(function(event){
 			event.preventDefault();
-			var $li = $(this).parents("li");
-			var $anchor = $(this).parents("a");
-			var position = $li.position();
+			var position = $(this).parents("a").addClass("hover").
+			position();
 			// $productList.removeClass('hover');
 			$quickView.removeClass('right');
 			var left = position.left+240;
@@ -150,126 +149,31 @@
 				$quickView.addClass('right');
 			}
 			$quickView.css({"left":left, "top": position.top}).fadeIn(100);
+			$li.append($('a #quickview'));
+		})
+		.parents('li') // now we have a jquery nodelist that contains all the LIs
+		.mouseenter(function () {
+			$(this).data('hovering',true);
+		})
+		.mouseleave(function () {
+			$(this).data('hovering', false);
+		})
+		;
+		$quickView.mouseleave(function () {
+			setTimeout(function () {
+				var $liHover = $('li.hover');
+				if (!$liHover.data('hovering')) {
+					$quickView.fadeOut(500, function () {
+						$('#product-list a').removeClass('hover');
+					});
+					$li.remove($('a #quickview'));
+				}
+			}, 200);
+		});
 
 
-			// mouseEnter and data set var on the Li and a
-			$quickView.mouseenter(function(hoverState){
-				var checkHover = $li.data({"hover": true});
-				$('a').removeClass('hover');
-				$anchor.addClass('hover');
-			});
-
-			// mouseOUT, set timer, remove Class and fadeout.
-
-			// $quickView.add($li)
-			$("#quickView, li img").mouseout(function(hoverOut){
-				setTimeout(function(){
-					(fadeOut(),200);
-				});
-				// var x = .get datapoint.
-				function fadeOut() {
-					$anchor.removeClass('hover');
-					$quickView.fadeOut(100);
-				};
-			});	
-		});	
-				// function checkData() {
-					// $x.data(key);
-				// 	$li.data("hover");
-				// };
-
-				// if (checkData() == true ){  fadeOut() }
-				// else {}
- 
-				
-
-			// 	setTimeout(function(){
-			// 		// if x not true{...}
-			// (fadeOut, 200);
-			// });
-
-			
 		
-
-			// function checkHover() {
-			// 	$li.get(hoverState){
-			// 	// if (hoverState = true){
-			// 	// 	$li.removeClass('hover');
-			// 	// 	$quickView.fadeOut(200);
-			// 	// }
-			// }
 			
-
-			// }
-			// $quickView.mouseLeave(function(fade){
-			// 	setTimeout("checkHover()",200);
-			// 		if checkHover !true {
-			// 			$li.removeClass('hover');
-			// 			$quickView.fadeOut(100);
-			// 		}
-			// 		// if checkHover = true, no action
-			// 		// 	else - remove hover class, and fadeout quickview. (if it's not true, ... remove class, etc.)
-			// })
-			
-
-
-			// $quickView.mouseleave(function(){
-			// 	if data("hover"=true){
-			// 		$quickView.fadeOut(100);
-			// 		$anchor.removeClass('hover');
-			// 	}
-			// 	else {}
-			
-
-
-			  // ($this).parents("li");
-		// 	var left = position.left+240;
-		// 	if (left > 480) {
-		// 		left = 0;
-		// 		$quickView.addClass('right');
-		// 	}
-		// 	$quickView.css("left", left).css("top", position.top).fadeIn(100);
-
-		// 	$quickView.mouseleave(function(){
-		// 		$quickView.fadeOut(500);
-		// 		$productList.removeClass('hover');
-		// 	});
-
-		// });	
-
-			// $quickview.hide();
-
-
-			// $quickView.css("left", left).css("top", position.top).fadeIn(100);
-			// $quickView.mouseleave(function() {
-
-			// // if (mouse position not over #product-list a.hover)	
-			// 	$quickView.fadeOut(500);
-			// 	$productList.removeClass('hover');
-
-
-	// if (position.left >= 480) {												
-
-	// 	$quickView.css({left: position.left - 480, top:position.top});
-	// 	$quickView.fadeIn(100);
-	// 	$quickView.removeClass('left-arrow');
-	// 	$quickView.addClass('right-arrow');
-	// }
-
-	// else {
-
-	// 	$quickView.css({left: position.left + 240, top: position.top});
-	// 	$quickView.fadeIn(100);
-	// 	$quickView.removeClass('right-arrow');
-	// 	$quickView.addClass('left-arrow');
-	// }	
-	// var qvBox = (($this).parents("li")).position();
-	// var x = qvBox.left + 240px;
-	// var y = qvBox.top;
-	// $quickview.css({left:x ,top:y}); 
-
- //});
-
  </script>
 
 </body>			
