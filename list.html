@@ -179,11 +179,10 @@
 				}, 200); 
 		});
 		 // == active
-		$("#product-list li a.active").on('mouseenter', function () {
-			setTimeout(function () {
-				if ($(anchor).hasClass('active')) {
+		$("#product-list li").on('mouseenter', function () {
+				if (($anchor).hasClass('active')) {
+					// then don't execute fadeout function
 						}
-				}, 200); 
 		});
 		
 
