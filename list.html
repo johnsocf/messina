@@ -173,18 +173,30 @@
 					$li.remove($quickView);
 				}
 				};
-		$("li.active").mouseleave(function () {
+		$("#quickview, li").on('mouseleave', function () {
 			setTimeout(function () {
 				fadeOut();
-				}, 200); // now we have a jquery nodelist that contains all the LIs
-
+				}, 200); 
 		});
-		$("#quickview").add("li img").mouseleave(function () {
+		 // == active
+		$("#product-list li a.active").on('mouseenter', function () {
 			setTimeout(function () {
-				fadeOut();
-				}, 200); // now we have a jquery nodelist that contains all the LIs
-
+				if ($(anchor).hasClass('active')) {
+						}
+				}, 200); 
 		});
+		
+
+
+
+		// $("li.active").mouseleave(function () {
+		// 	setTimeout(function () {
+		// 		fadeOut();
+		// 		}, 200); // now we have a jquery nodelist that contains all the LIs
+
+		// });
+		// $("#quickview").add("li img")
+		
 		// $("li img").mouseleave(function () {
 		// 	setTimeout(function () {
 		// 		fadeOut();
