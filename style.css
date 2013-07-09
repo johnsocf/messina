@@ -154,7 +154,7 @@ ol#product-list {
 	display: table;
 	clear: both;
 }
-#product-list li{
+#product-list > li{
 	width:220px;
 	height:220px;
 	float:left;
@@ -162,13 +162,13 @@ ol#product-list {
 	margin:0 20px 20px 0;
 	padding:0;
 }
-#product-list li:nth-of-type(3), #product-list li:nth-of-type(6){
+#product-list > li:nth-of-type(3), #product-list li:nth-of-type(6){
 	margin:0 0 20px 0;
 }
-#product-list li:nth-of-type(4){
+#product-list > li:nth-of-type(4){
 	margin:0 20px 20px 0;
 }
-#product-list li a{
+#product-list > li a{
 	display:block;
 	position:relative;
 	text-decoration: none;
@@ -177,20 +177,26 @@ ol#product-list {
 	margin:0;
 	padding:0;
 }
-#product-list a:hover img, #product-list a.hover img{
-	position:relative;
-	z-index: -1;
-}
-#product-list a:hover, #product-list a.hover{
+.product-list-item:hover, .product-list-item.active{
 	background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,0.45) 100%); /* FF3.6+ */
 	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0)), color-stop(1%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.45))); /* Chrome,Safari4+ */
 	background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.45) 100%); /* Chrome10+,Safari5.1+ */
 	background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.45) 100%); /* W3C */
+}
+.product-list-item:hover img, .product-list-item.active img {
+	position: relative;
+	z-index: -1;
+}
+#product-list a:hover img.image-box, #product-list a.active img.image-box{
+	position:relative;
+	z-index: -1;
+}
+#product-list a:hover, #product-list a.active{
 	margin:0;
 	padding:0;
 	position:absolute;
 }
-#product-list li a h2{
+#product-list li a h2.item-title{
 	width:100%;
 	text-align:center;
 	display:none;
@@ -199,7 +205,7 @@ ol#product-list {
 	font-weight:normal;
 	letter-spacing:1.5px;
 }
-#product-list li a:hover h2, #product-list li a.hover h2{
+#product-list li a:hover h2.item-title, #product-list li.active a h2.item-title{
 	display:block;
 	position:absolute;
 	width:100%;
@@ -212,7 +218,7 @@ ol#product-list {
 	margin-top:140px;
 	margin-left:50px;*/
 }
-#product-list li a span.button{
+#product-list li a span.quickview-button{
 	height:25px;
 	width:110px;
 	background-color:#fff;
@@ -228,10 +234,10 @@ ol#product-list {
 	text-transform: uppercase;
 	position:absolute;
 }
-#product-list li a:hover span.button, #product-list li a.hover span.button{
+#product-list li a:hover span.quickview-button, #product-list li.active a span.quickview-button{
 	display:block;
 }
-#product-list li a p{
+#product-list li a p.item-price{
 	width:100%;
 	text-align:center;
 	display:none;
@@ -244,7 +250,7 @@ ol#product-list {
 	color:#FFF;
 	font-weight: lighter;
 }
-#product-list li a:hover p, #product-list li a.hover p{
+#product-list li a:hover p.item-price, #product-list li.active a p.item-price{
 	display:block;
 	position:absolute;
 	/*position:absolute;
@@ -505,7 +511,6 @@ footer ul li a:hover:before{
 	color:rgb(103,103,103);
 }
 #quickview ul li.quickview-menu{
-	height:0px;
 	list-style-type: none;
 	display:block;
 }

@@ -37,73 +37,56 @@
 			<div id="content">
 				<h1 class="hidden">Kitchen Tables</h1>
 				<ol id="product-list">
-					<li>
+					<li class="product-list-item">
 						<a href="FIXME">
-							<h2>Big Sir Dining Table</h2>
-							<p>&#36;1499</p>
+							<h2 class="item-title">Big Sir Dining Table</h2>
+							<p class="item-price">&#36;1499</p>
 							<img class="image-box" src="images/table-image-Big-Sir.png" alt="Big Sir Dining Table"/>
-							<span class="button">Quick View</span>
+							<span class="quickview-button">Quick View</span>
 						</a>
 					</li>
-					<li>
+					<li class="product-list-item">
 						<a href="FIXME">
-							<h2>Basque Honey</h2>
-							<p>&#36;xyz</p>
+							<h2 class="item-title">Basque Honey</h2>
+							<p class="item-price">&#36;xyz</p>
 							<img class="image-box" src="images/table-image-Basque-Honey.png" alt="Basque Honey"/>
-							<span class="button">Quick View</span>
+							<span class="quickview-button">Quick View</span>
 						</a>
 					</li>
-					<li>
+					<li class="product-list-item">
 						<a href="FIXME">
-							<h2>Cucina</h2>
-							<p>&#36;xyz</p>
+							<h2 class="item-title">Cucina</h2>
+							<p class="item-price">&#36;xyz</p>
 							<img class="image-box" src="images/table-image-Cucina.png" alt="Cucina"/>
-							<span class="button">Quick View</span>
+							<span class="quickview-button">Quick View</span>
 						</a>
 					</li>
-					<li>
+					<li class="product-list-item">
 						<a href="FIXME">
-							<h2>Arlington</h2>
-							<p>&#36;xyz</p>
+							<h2 class="item-title">Arlington</h2>
+							<p class="item-price">&#36;xyz</p>
 							<img class="image-box" src="images/table-image-Arlington.png" alt="Arlington"/>
-							<span class="button">Quick View</span>
+							<span class="quickview-button">Quick View</span>
 						</a>
 					</li>
-					<li>
+					<li class="product-list-item">
 						<a href="FIXME">
-							<h2>Pacifica</h2>
-							<p>&#36;xyz</p>
+							<h2 class="item-title">Pacifica</h2>
+							<p class="item-price">&#36;xyz</p>
 							<img class="image-box" src="images/table-image-Pacifica.png" alt="Pacifica"/>
-							<span class="button">Quick View</span>
+							<span class="quickview-button">Quick View</span>
 						</a>
 					</li>
-					<li>
+					<li class="product-list-item">
 						<a href="FIXME">
-							<h2>Sideboard</h2>
-							<p>&#36;xyz</p>
+							<h2 class="item-title">Sideboard</h2>
+							<p class="item-price">&#36;xyz</p>
 							<img class="image-box" src="images/table-image-Sideboard.png" alt="Sideboard"/>
-							<span class="button">Quick View</span>
+							<span class="quickview-button">Quick View</span>
 						</a>
 					</li>
 				</ol>
-				<div id="quickview">
-					<h1>Big Sir Dining Table</h1>
-					<div id="quickview-zoom">
-						<img src="images/quickview-image-XL-Big-Sir.jpg" alt="Big Sir Dining Table in full resolution"/>
-					</div>
-					<p>Like its namesake, this casual, contemporary dining group is big, bold and natural. The rustic beauty of Big Sur lies in it&apos;s solid European white oak with naturally occurring splits, cracks and knots.</p>
-					<ul>
-						<li class="quickview-menu"> 65&quot; &times; 37.5&quot; &times; 30&quot;</li>
-						<li class="quickview-menu">Solid white oak</li>
-						<li class="quickview-menu">Seats up to six</li>
-						<li class="quickview-menu">Made in Poland</li>
-					</ul>
-					<form id="cart-form">
-						<p id="cost">&#36;1499</p>	
-						<input type="hidden">
-						<input type="submit" value="add to cart" />
-					</form>	
-				</div><!-- #quickview-box-->
+				
 			</div><!-- #content -->	
 		</div><!-- #main -->	
 
@@ -132,57 +115,64 @@
 		</footer>
  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 
- <script>
- 		var $button = $('.button');
- 		var $quickView = $('#quickview');
- 		var $li = $('#product-list li');
- 		var $anchor = $('#product-list a');
-
-		$button.click(function(event){
-			event.preventDefault();
-			var position = $(this).parents("a").addClass("active").
-			position();
-			// $productList.removeClass('hover');
-			$quickView.removeClass('right');
-			var left = position.left+240;
-			if (left > 480) {
-				left = 0;
-				$quickView.addClass('right');
-			}
-			$quickView.css({"left":left, "top": position.top}).fadeIn(100);
-			$(this).closest('li').append($quickView);
-
-
-		})
+<script id="template-quickview" type="text/template">
+			<article id="quickview">
+				<h1>Big Sir Dining Table</h1>
+					<div id="quickview-zoom">
+						<img src="images/quickview-image-XL-Big-Sir.jpg" alt="Big Sir Dining Table in full resolution"/>
+					</div>
+					<p>Like its namesake, this casual, contemporary dining group is big, bold and natural. The rustic beauty of Big Sur lies in it&apos;s solid European white oak with naturally occurring splits, cracks and knots.</p>
+					<ul>
+						<li class="quickview-menu"> 65&quot; &times; 37.5&quot; &times; 30&quot;</li>
+						<li class="quickview-menu">Solid white oak</li>
+						<li class="quickview-menu">Seats up to six</li>
+						<li class="quickview-menu">Made in Poland</li>
+					</ul>
+					<form id="cart-form">
+						<p id="cost">&#36;1499</p>	
+						<input type="hidden">
+						<input type="submit" value="add to cart" />
+					</form>	
+			</article>
+		</script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 		
-		// $quickView.add('#product-list li') - as it's within it, now.
 		
-		.parents('li') // now we have a jquery nodelist that contains all the LIs
-		.mouseenter(function () {
-			$(this).data('hovering',true);
-		})
-		.mouseleave(function () {
-			$(this).data('hovering', false);
-		})
-		;
-		var $imgQv = $("#quickview").add("li");
-		function fadeOut() {
-			var $aHover = $('a.active');
-			if (!$aHover.data('hovering')) {
-					$quickView.fadeOut(500, function () {
-					$anchor.removeClass('active', 100);
-					});
-					$li.remove($quickView);
+
+ // <script>
+			$('.quickview-button').click(function(event){
+				
+				event.preventDefault();
+				var $item = $(this).parents('li').addClass('active');				
+				var position = $item.position();
+				var left = position.left;
+				var $quickview = $($('#template-quickview').html());
+
+				$item.append($quickview);
+
+				if(left>=480){
+					$quickview.css({'top':position.top,'left':left-480}).addClass("right");	
+				}else{
+					$quickview.css({'top':position.top,'left':left+240});
 				}
-				};
-		
-		$quickView.on('mouseleave', function () {
-			setTimeout(function () {
-				fadeOut();
-				}, 200); 
-		});
-		
-		
+				
+				$quickview.fadeIn(500);
+				return false;
+			});//End Button Click
+
+
+			$('.product-list-item').mouseleave(function () {
+				$li = $(this);
+				if ($li.hasClass('active')) {
+					$quickview = $li.find('article.quickview')
+					$quickview.fadeOut(500, function () {
+						$li.removeClass('active');
+						$quickview.remove();
+					});
+				}
+			});
+
+ 	
  </script>
 
 </body>			
