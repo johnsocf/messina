@@ -151,6 +151,8 @@
 			}
 			$quickView.css({"left":left, "top": position.top}).fadeIn(100);
 			$(this).closest('li').append($quickView);
+
+
 		})
 		
 		// $quickView.add('#product-list li') - as it's within it, now.
@@ -163,7 +165,7 @@
 			$(this).data('hovering', false);
 		})
 		;
-		var $imgQv = $("#quickview").add("a.active");
+		var $imgQv = $("#quickview").add("li");
 		function fadeOut() {
 			var $aHover = $('a.active');
 			if (!$aHover.data('hovering')) {
@@ -173,35 +175,14 @@
 					$li.remove($quickView);
 				}
 				};
-		$("#quickview, li").on('mouseleave', function () {
+		
+		$quickView.on('mouseleave', function () {
 			setTimeout(function () {
 				fadeOut();
 				}, 200); 
 		});
-		 // == active
-		$("#product-list li").on('mouseenter', function () {
-				if (($anchor).hasClass('active')) {
-					// then don't execute fadeout function
-						}
-		});
 		
-
-
-
-		// $("li.active").mouseleave(function () {
-		// 	setTimeout(function () {
-		// 		fadeOut();
-		// 		}, 200); // now we have a jquery nodelist that contains all the LIs
-
-		// });
-		// $("#quickview").add("li img")
 		
-		// $("li img").mouseleave(function () {
-		// 	setTimeout(function () {
-		// 		fadeOut();
-		// 	}, 200);
-		// });
-			
  </script>
 
 </body>			
