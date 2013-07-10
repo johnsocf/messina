@@ -132,15 +132,139 @@ margin:20px 10px 20px 0;
 
 /*Detail Contents*/
 
-ul#quickview-zoom-box{}
+ul#quickview-zoom-box{
+	width:380px;
+	height:500px;
+	padding:0;
+	margin:0;
+	float:left;
+}
 
-ul#quickview-zoom-box li#primary{}
+ul#quickview-zoom-box li#primary{
+	width:100%;
+	height:378px;
+	border: 1px solid rgb(239,244,246);
+	padding:0;
+	margin:0;
 
-ul#quickview-zoom-box li.thumbnail{}
+}
+ul#quickview-zoom-box li#primary a{
+	display:block;
+}
+ul#quickview-zoom-box li#primary a img{
+	width:378px;
+	height:378px;
+}
 
-#item-details{}
+ul#quickview-zoom-box li.thumbnail a{
+	background-color:#a6a6a6;
+	width:60px;
+	height:60px;
+	padding:0;
+	margin:20px 10px 0 10px;
+	float:left;
+}
 
-.item-ideas{}
+ul#quickview-zoom-box li.thumbnail a img{
+	background-color:#a6a6a6;
+	width:60px;
+	height:60px;
+}
+ul#quickview-zoom-box li.thumbnail:nth-of-type(2) a{
+	margin:20px 10px 20px 0;
+}
+ul#quickview-zoom-box li.thumbnail:nth-of-type(6) a{
+	margin:20px 0 20px 10px;
+}
+#item-details{
+	width:300px;
+	height:500px;
+	padding:0;
+	margin:0;
+	float:right;
+}
+#item-details p{
+	font-size:87.5%;
+	padding:0;
+	column-count: 1; 
+	text-align:left;
+	/* Safari and Chrome */
+	-webkit-column-count: 1;
+	-moz-column-count: 1; 
+	vertical-align:text-top;
+	margin:0px 0px 0px 0;
+	font-size:90%;
+	letter-spacing: 1px;
+	color:rgb(218,217,224);
+}
+#item-details h1{
+	font-weight: normal;
+	padding:0;
+	margin-top:220px;
+	color:rgb(67,66,88);
+	font-size:112.5%;
+	letter-spacing:1px;
+}
+#item-details ul{
+	font-size:87.5%;
+	margin:0;
+	padding:0;
+	font-size:100%;
+	float:left;
+	font-size:90%;
+	letter-spacing: 1.2px;
+	color:rgb(207,207,207);
+}
+#item-details ul li{
+	list-style-type: none;
+	display:block;
+}
+#detail-cart-form{
+	float:right;
+}
+#detail-cart-form p{
+	font-family: 'junctionregularRegular', Arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 120%;
+	padding:0;
+	margin:0px 0 0 0;
+	color:rgb(103,103,103);
+	text-align:center;
+}
+#detail-cart-form input[type=submit]{
+	font-family: 'junctionregularRegular', Arial, sans-serif;
+	width:120px;
+	height:28px;
+	border:2px solid rgb(217,227,232);
+	line-height: 23px;
+	text-transform: uppercase;
+	text-align:center;
+	font-size:100%;
+	color:rgb(144,152,155);
+	display:block;
+	text-decoration: none;
+	font-weight:light;
+	margin:5px;
+}
+#detail-cart-form input{
+	font-family: 'junctionregularRegular', Arial, sans-serif;
+	font-size: 100%;
+	color:rgb(144,152,155);
+	background: #ffffff;
+	border:1px solid #aaa9ba;
+	margin:0;
+	padding:2px;
+}
+#item-ideas{
+	width:940px;
+}
+.item-idea{
+	height:220px;
+	width:220px;
+	padding:0;
+	margin:0;
+	float:left;
+}
 
 /*Kitchen Page Content*/
 a.image-box{
