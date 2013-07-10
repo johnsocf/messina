@@ -151,8 +151,8 @@ ul#quickview-zoom-box li#primary a{
 	display:block;
 }
 ul#quickview-zoom-box li#primary a img{
-	width:378px;
-	height:378px;
+	width:380px;
+	width:380px;
 	border: 1px solid rgb(239,244,246);
 }
 
@@ -231,7 +231,7 @@ ul#quickview-zoom-box li.thumbnail:nth-of-type(6) a{
 	font-size: 120%;
 	padding:0;
 	margin:7px 0 0 65px;
-	color:rgb(103,103,103);
+	color:rgb(47,46,70);
 	text-align:center;
 }
 #detail-cart-form input[type=submit]{
@@ -252,7 +252,7 @@ ul#quickview-zoom-box li.thumbnail:nth-of-type(6) a{
 #detail-cart-form input{
 	font-family: 'junctionregularRegular', Arial, sans-serif;
 	font-size: 100%;
-	color:rgb(144,152,155);
+	color:rgb(174,179,182);
 	background: #ffffff;
 	border:1px solid #aaa9ba;
 	margin:0;
@@ -265,23 +265,40 @@ ul#quickview-zoom-box li.thumbnail:nth-of-type(6) a{
 }
 #item-ideas{
 	width:940px;
+	height:333px;
+	float:left;
 }
 .item-idea{
 	height:220px;
 	width:220px;
 	padding:0;
-	margin:0;
 	float:left;
+	margin:56px 10px;
 }
-#item-ideas h1{
+ul li.item-idea:nth-of-type(2){
+	margin:56px 10px 56px 0;
+}
+ul li.item-idea:nth-of-type(4){
+	margin:56px 0px 56px 10px;
+}
+.item-idea a img{
+	height:220px;
+	width:220px;
+	background-color:#fff;
+}
+.ideas-title{
 	font-family: 'junctionregularRegular', Arial, sans-serif;
 	font-size: 125%;
 	font-weight: lighter;
-	height:100px;
-	width:200px;
+	position:absolute;
+	top:10px;
+	color:rgb(47,46,70);
 	display:block;
 	margin:0;
 	padding:0;
+}
+ul#item-ideas{
+	position:relative;
 }
 
 /*Kitchen Page Content*/
