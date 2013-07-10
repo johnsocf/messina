@@ -143,9 +143,8 @@ ul#quickview-zoom-box{
 ul#quickview-zoom-box li#primary{
 	width:100%;
 	height:378px;
-	border: 1px solid rgb(239,244,246);
 	padding:0;
-	margin:0;
+	margin-top:0px;
 
 }
 ul#quickview-zoom-box li#primary a{
@@ -154,6 +153,7 @@ ul#quickview-zoom-box li#primary a{
 ul#quickview-zoom-box li#primary a img{
 	width:378px;
 	height:378px;
+	border: 1px solid rgb(239,244,246);
 }
 
 ul#quickview-zoom-box li.thumbnail a{
@@ -185,6 +185,7 @@ ul#quickview-zoom-box li.thumbnail:nth-of-type(6) a{
 }
 #item-details p{
 	font-size:87.5%;
+	font-weight: lighter;
 	padding:0;
 	column-count: 1; 
 	text-align:left;
@@ -198,16 +199,18 @@ ul#quickview-zoom-box li.thumbnail:nth-of-type(6) a{
 	color:rgb(218,217,224);
 }
 #item-details h1{
-	font-weight: normal;
+	font-family: 'junctionregularRegular', Arial, sans-serif;
+	font-weight:100;
 	padding:0;
-	margin-top:220px;
 	color:rgb(67,66,88);
-	font-size:112.5%;
+	margin-top:-2px;
+	font-size:150%;
 	letter-spacing:1px;
 }
 #item-details ul{
 	font-size:87.5%;
 	margin:0;
+	margin-top: 15px;
 	padding:0;
 	font-size:100%;
 	float:left;
@@ -227,7 +230,7 @@ ul#quickview-zoom-box li.thumbnail:nth-of-type(6) a{
 	text-transform: uppercase;
 	font-size: 120%;
 	padding:0;
-	margin:0px 0 0 0;
+	margin:10px 0 0 65px;
 	color:rgb(103,103,103);
 	text-align:center;
 }
@@ -244,7 +247,7 @@ ul#quickview-zoom-box li.thumbnail:nth-of-type(6) a{
 	display:block;
 	text-decoration: none;
 	font-weight:light;
-	margin:5px;
+	margin:28px;
 }
 #detail-cart-form input{
 	font-family: 'junctionregularRegular', Arial, sans-serif;
@@ -254,6 +257,11 @@ ul#quickview-zoom-box li.thumbnail:nth-of-type(6) a{
 	border:1px solid #aaa9ba;
 	margin:0;
 	padding:2px;
+}
+#dropdown-form{
+	float:left;
+	width:180px;
+	margin-top:15px;
 }
 #item-ideas{
 	width:940px;
@@ -449,8 +457,11 @@ ol#product-list {
 	height:20px;
 	width:220px;
 	margin:40px 0 0 0;
-	font-size:87.5%;
+	font-size:100%;
+	font-family: 'junctionregularRegular', Arial, sans-serif;
 	border-bottom:1px solid gray;
+	font-weight:lighter;
+	letter-spacing: 1;
 }
 
 /*Footer*/

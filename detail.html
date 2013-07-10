@@ -25,12 +25,12 @@
 					<input type="submit" value="search"/>
 				</form>
 						
-				<h1>About Messina</h1>	
+				<h1>Kitchen</h1>	
 				<ul role="navigation">
-					<li><a href="FIXME">Philosophy</a></li>
-					<li><a href="FIXME">Privacy Policy</a></li>
-					<li><a href="FIXME">Shipping &amp; Returns</a></li>
-					<li><a href="FIXME">F.A.Q.s</a></li>
+					<li><a href="FIXME">Dining Tables &amp; Chairs</a></li>
+					<li><a href="FIXME">Must Have Appliances</a></li>
+					<li><a href="FIXME">Plates, Bowles &amp; Glasses</a></li>
+					<li><a href="FIXME">Tableware &amp; Accoutrement</a></li>
 				</ul>
 			</div><!-- #sidebar -->
 			<div id="content">	
@@ -55,7 +55,15 @@
 							<li class="item-detail-menu">Made in Poland</li>
 						</ul>
 
-						<form action="dropdown-list">
+						
+
+						<form id="detail-cart-form">
+							<p id="cost">&#36;1499</p>	
+							<input type="hidden">
+							<input type="submit" value="add to cart" />
+						</form>	
+
+						<form action="dropdown-list" id="dropdown-form">
 							<select name="wood">
 								<option value="Natural Hickory">Natural Hickory</option>
 								<option value="Redwood">Redwood</option>
@@ -63,12 +71,6 @@
 								<option value="Spruce">Spruce</option>
 							</select>
 						</form>
-
-						<form id="detail-cart-form">
-							<p id="cost">&#36;1499</p>	
-							<input type="hidden">
-							<input type="submit" value="add to cart" />
-						</form>	
 				</div>
 					
 				<h1>You May Also Like...</h1>
