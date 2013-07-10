@@ -183,6 +183,15 @@ ul#quickview-zoom-box li.thumbnail:nth-of-type(6) a{
 	margin:0;
 	float:right;
 }
+#item-details h1{
+	font-family: 'junctionregularRegular', Arial, sans-serif;
+	font-weight:100;
+	padding:0;
+	color:rgb(67,66,88);
+	margin:-2px 0 0 0;
+	font-size:150%;
+	letter-spacing:1px;
+}
 #item-details p{
 	font-size:87.5%;
 	font-weight: lighter;
@@ -193,26 +202,16 @@ ul#quickview-zoom-box li.thumbnail:nth-of-type(6) a{
 	-webkit-column-count: 1;
 	-moz-column-count: 1; 
 	vertical-align:text-top;
-	margin:0px 0px 0px 0;
+	margin:10px 0px 0px 0;
 	font-size:90%;
 	letter-spacing: 1px;
 	color:rgb(218,217,224);
 }
-#item-details h1{
-	font-family: 'junctionregularRegular', Arial, sans-serif;
-	font-weight:100;
-	padding:0;
-	color:rgb(67,66,88);
-	margin-top:-2px;
-	font-size:150%;
-	letter-spacing:1px;
-}
 #item-details ul{
 	font-size:87.5%;
 	margin:0;
-	margin-top: 15px;
+	margin-top: 11px;
 	padding:0;
-	font-size:100%;
 	float:left;
 	font-size:90%;
 	letter-spacing: 1.2px;
@@ -224,13 +223,14 @@ ul#quickview-zoom-box li.thumbnail:nth-of-type(6) a{
 }
 #detail-cart-form{
 	float:right;
+	margin-top:20px;
 }
 #detail-cart-form p{
 	font-family: 'junctionregularRegular', Arial, sans-serif;
 	text-transform: uppercase;
 	font-size: 120%;
 	padding:0;
-	margin:10px 0 0 65px;
+	margin:7px 0 0 65px;
 	color:rgb(103,103,103);
 	text-align:center;
 }
@@ -247,7 +247,7 @@ ul#quickview-zoom-box li.thumbnail:nth-of-type(6) a{
 	display:block;
 	text-decoration: none;
 	font-weight:light;
-	margin:28px;
+	margin:46px 15px;
 }
 #detail-cart-form input{
 	font-family: 'junctionregularRegular', Arial, sans-serif;
@@ -259,9 +259,9 @@ ul#quickview-zoom-box li.thumbnail:nth-of-type(6) a{
 	padding:2px;
 }
 #dropdown-form{
-	float:left;
-	width:180px;
-	margin-top:15px;
+	position: absolute;
+	width:0px;
+	margin:98px 0;
 }
 #item-ideas{
 	width:940px;
@@ -272,6 +272,16 @@ ul#quickview-zoom-box li.thumbnail:nth-of-type(6) a{
 	padding:0;
 	margin:0;
 	float:left;
+}
+#item-ideas h1{
+	font-family: 'junctionregularRegular', Arial, sans-serif;
+	font-size: 125%;
+	font-weight: lighter;
+	height:100px;
+	width:200px;
+	display:block;
+	margin:0;
+	padding:0;
 }
 
 /*Kitchen Page Content*/
