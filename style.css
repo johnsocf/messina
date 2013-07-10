@@ -130,6 +130,18 @@ vertical-align:text-top;
 margin:20px 10px 20px 0;
 }
 
+/*Detail Contents*/
+
+ul#quickview-zoom-box{}
+
+ul#quickview-zoom-box li#primary{}
+
+ul#quickview-zoom-box li.thumbnail{}
+
+#item-details{}
+
+.item-ideas{}
+
 /*Kitchen Page Content*/
 a.image-box{
 	width:100%;
@@ -178,7 +190,7 @@ ol#product-list {
 	margin:0;
 	padding:0;
 }
-.product-list-item:hover, .product-list-item.active{
+.product-list-item:hover, .product-list-item.active {
 	background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,0.45) 100%); /* FF3.6+ */
 	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0)), color-stop(1%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.45))); /* Chrome,Safari4+ */
 	background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.45) 100%); /* Chrome10+,Safari5.1+ */
