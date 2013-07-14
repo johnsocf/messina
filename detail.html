@@ -36,12 +36,12 @@
 			<div id="content">	
 
 				<ul id="quickview-zoom-box">
-						<li id="primary"><a href="FIXME"><img src="images/detail-main-big-sir.jpg" alt="Big Sir Dining Table in full resolution"/></a></li>
-						<li class="thumbnail" ><a href="FIXME"><img src="images/view1-Big-Sir.jpg" alt="Thumbnail View 1"/></a></li>
-						<li class="thumbnail" ><a href="FIXME"><img src="images/view2-Big-Sir.jpg" alt="Thumbnail View2"/></a></li>
-						<li class="thumbnail" ><a href="FIXME"><img src="images/view3-Big-Sir.jpg" alt="Thumbnail View3"/></a></li>
-						<li class="thumbnail" ><a href="FIXME"><img src="images/view4-Big-Sir.jpg" alt="Thumbnail View4"/></a></li>
-						<li class="thumbnail" ><a href="FIXME"><img src="images/view5-Big-Sir.jpg" alt="Thumbnail View5"/></a></li>
+						<li id="primary"><a href="images/detail-main-big-sir.jpg"><img src="images/detail-main-big-sir.jpg" alt="Big Sir Dining Table in full resolution"/></a></li>
+						<li class="thumbnail" ><a href="images/view1-Big-Sir.jpg"><img src="images/view1-Big-Sir.jpg" alt="Thumbnail View 1"/></a></li>
+						<li class="thumbnail" ><a href="images/view2-Big-Sir.jpg"><img src="images/view2-Big-Sir.jpg" alt="Thumbnail View2"/></a></li>
+						<li class="thumbnail" ><a href="images/view3-Big-Sir.jpg"><img src="images/view3-Big-Sir.jpg" alt="Thumbnail View3"/></a></li>
+						<li class="thumbnail" ><a href="images/view4-Big-Sir.jpg"><img src="images/view4-Big-Sir.jpg" alt="Thumbnail View4"/></a></li>
+						<li class="thumbnail" ><a href="images/view5-Big-Sir.jpg"><img src="images/view5-Big-Sir.jpg" alt="Thumbnail View5"/></a></li>
 				</ul>
 
 				
@@ -56,7 +56,7 @@
 						</ul>
 
 						<form action="dropdown-list" id="dropdown-form">
-							<select name="wood">
+							<select name="Woods">
 								<option value="Natural Hickory">Natural Hickory</option>
 								<option value="Redwood">Redwood</option>
 								<option value="Pine">Pine</option>
@@ -106,6 +106,29 @@
 					<span class="hidden">Messina : Statements of Fashion</span>
 				</a>
 			</div>
+			<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+			<script>
+			(function () {
+				var $mainImage = $('li#primary img');
+				var $thumbnail = $('li.thumbnail a');
+
+				$mainImage.load(function(){
+					console.log("loaded!");
+					$mainImage.fadeIn(500);
+				});
+				$thumbnail.click(function (event){
+					event.preventDefault();
+					console.log("clicked!");
+					
+					var href = $(this).attr('href');
+
+				$mainImage.fadeOut(500, function (){
+						$mainImage.attr('src', href);
+					});
+				});
+				$thumbnail.filter(':second').click();
+			})();
+			</script>
 		</footer>
 	</body>
 </html>	
