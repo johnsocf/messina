@@ -37,7 +37,7 @@
 
 				<ul id="quickview-zoom-box">
 						<li id="primary"><a href="images/detail-main-big-sir.jpg"><img src="images/detail-main-big-sir.jpg" alt="Big Sir Dining Table in full resolution"/></a></li>
-						<li class="thumbnail" ><a href="images/detail-main-big-sir.jpg"><img src="images/view1-Big-Sir.jpg" alt="Thumbnail View 1"/></a></li>
+						<li class="thumbnail" id="next"><a href="images/detail-main-big-sir.jpg"><img src="images/view1-Big-Sir.jpg" alt="Thumbnail View 1"/></a></li>
 						<li class="thumbnail" ><a href="images/view2-Big-Sir.jpg"><img src="images/view2-Big-Sir.jpg" alt="Thumbnail View2"/></a></li>
 						<li class="thumbnail" ><a href="images/view3-Big-Sir.jpg"><img src="images/view3-Big-Sir.jpg" alt="Thumbnail View3"/></a></li>
 						<li class="thumbnail" ><a href="images/view4-Big-Sir.jpg"><img src="images/view4-Big-Sir.jpg" alt="Thumbnail View4"/></a></li>
@@ -107,6 +107,7 @@
 				</a>
 			</div>
 			<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+			<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 			<script>
 			(function () {
 				var $mainImage = $('li#primary img');
@@ -119,7 +120,15 @@
 				$thumbnail.click(function (event){
 					event.preventDefault();
 					console.log("clicked!");
-					
+					var href = $(this).attr('href');
+
+				$mainImage.fadeOut(500, function (){
+						$mainImage.attr('src', href);
+					});
+				});
+				$thumbnail.hover(function (event){
+					event.preventDefault();
+					console.log("clicked!");
 					var href = $(this).attr('href');
 
 				$mainImage.fadeOut(500, function (){
