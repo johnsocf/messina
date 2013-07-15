@@ -35,15 +35,16 @@
 			</div><!-- #sidebar -->
 			<div id="content">	
 
-				<ul id="quickview-zoom-box">
-						<li id="primary"><a href="images/detail-main-big-sir.jpg"><img src="images/detail-main-big-sir.jpg" alt="Big Sir Dining Table in full resolution"/></a></li>
+				<div id="gallery-box">
+				<span><img id="primary" src="" alt=""/></span>
+				<ul id="gallery">		
 						<li class="thumbnail" id="next"><a href="images/detail-main-big-sir.jpg"><img src="images/view1-Big-Sir.jpg" alt="Thumbnail View 1"/></a></li>
 						<li class="thumbnail" ><a href="images/view2-Big-Sir.jpg"><img src="images/view2-Big-Sir.jpg" alt="Thumbnail View2"/></a></li>
 						<li class="thumbnail" ><a href="images/view3-Big-Sir.jpg"><img src="images/view3-Big-Sir.jpg" alt="Thumbnail View3"/></a></li>
 						<li class="thumbnail" ><a href="images/view4-Big-Sir.jpg"><img src="images/view4-Big-Sir.jpg" alt="Thumbnail View4"/></a></li>
 						<li class="thumbnail" ><a href="images/view5-Big-Sir.jpg"><img src="images/view5-Big-Sir.jpg" alt="Thumbnail View5"/></a></li>
 				</ul>
-
+			</div>
 				
 				<div id="item-details">
 					<h1>Big Sir Dining Table</h1>
@@ -107,16 +108,17 @@
 				</a>
 			</div>
 			<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-			<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+			<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 			<script>
 			(function () {
-				var $mainImage = $('li#primary img');
+				var $mainImage = $('#primary');
 				var $thumbnail = $('li.thumbnail a');
 
 				$mainImage.load(function(){
 					console.log("loaded!");
 					$mainImage.fadeIn(500);
 				});
+
 				$thumbnail.click(function (event){
 					event.preventDefault();
 					console.log("clicked!");
@@ -126,17 +128,43 @@
 						$mainImage.attr('src', href);
 					});
 				});
-				$thumbnail.hover(function (event){
-					event.preventDefault();
-					console.log("clicked!");
-					var href = $(this).attr('href');
+				
+				$thumbnail.filter(':first').click();
 
-				$mainImage.fadeOut(500, function (){
-						$mainImage.attr('src', href);
-					});
-				});
-				$thumbnail.filter(':second').click();
+				$(this).filter(':next').click().event.preventDefault;
+
 			})();
+
+			// (function () {
+			// 	var $mainImage = $('#primary');
+			// 	var $thumbnail = $('li.thumbnail a');
+
+			// 	$mainImage.load(function(){
+			// 		console.log("loaded!");
+			// 		$mainImage.fadeIn(500);
+			// 	});
+
+			// 	$thumbnail.hover(
+			// 		function () {
+			// 			var href = $(this).attr('href');
+			// 			$mainImage.attr('src', href);
+			// 			},
+			// 			// $(this).append($("<span> ***</span>"));
+			// 			// },
+			// 			function () {
+			// 			$mainImage.attr('src', href);
+			// 			}
+			// 		);	
+			// 		// $(this).find("span:last").remove();
+			// 		// }
+			// 	$mainImage.fadeOut(500, function (){
+			// 			$mainImage.attr('src', href);
+			// 	});
+				
+				
+			// 	$thumbnail.filter(':first').click();
+			// });
+
 			</script>
 		</footer>
 	</body>
