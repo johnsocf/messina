@@ -304,6 +304,7 @@ ul#item-ideas{
 	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 100%); /* W3C */
 	width:940px;
 	margin:0 auto;
+	position:relative;
 }
 li.slider-items-active-running{
 	display:block;
@@ -357,14 +358,27 @@ li.slider-items h2{
 	top:0%;
 	left:0%;
 }
-.nav-slider{}
-.nav-slider-items-current{
+.nav-slider{
+	height:15px;
+	width:90px;
+	position:absolute;
+	top: 91%;
+	z-index: 3;
+	left: 45%;
+}
+.nav-items{
+	height:15px;
+	width:15px;
+	margin:0 0 0 15px;
+	float:left;
+}
+.nav-slider a.slider-items-current{
 	background-image:url(images/slider-nav-button-active.jpg);
 }
-.nav-slider-items-next{
+.nav-slider a.slider-items-next{
 	background-image:url(images/slider-nav-button.jpg);
 }
-.nav-slider-items{
+a.slider-items{
 	background-image:url(images/slider-nav-button.jpg);
 }
 
