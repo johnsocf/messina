@@ -293,8 +293,8 @@ ul li.item-idea:nth-of-type(4){
 ul#item-ideas{
 	position:relative;
 }
-/*Index Contents*/
-#slider{
+/*Home Page Contents*/
+#slider-box{
 	height:313px;
 	border-bottom: 1px solid rgb(207,207,207);
 	background: rgb(255,255,255); /* Old browsers */
@@ -302,29 +302,77 @@ ul#item-ideas{
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(243,243,243,1))); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 100%); /* Chrome10+,Safari5.1+ */
 	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 100%); /* W3C */
-	width:100%;
+	width:940px;
+	margin:0 auto;
 }
-li.slide{
+li.slider-items-active-running{
+	display:block;
+	height:313px;
+	margin:0;
+	position:absolute;
+	padding:0;
+	visibility: visible;
+	width:940px;
+	z-index:1;
+
+}
+li.slider-items-active-running img.main-slider-image{
+	top:13.5%;
+	left:0%;
+	position:absolute;
+}
+li.slider-items-active-running img.secondary-slider-image{
+	top:0%;
+	left:32.3%;
+	position:absolute;
+}
+li.slider-items-active-running h1{
+	top:0%;
+	left:54%;
+	position:absolute;
+}
+li.slider-items-active-running h2{
+	top:15%;
+	left:54%;
+	position:absolute;
+}
+li.slider-items-active-running h3{
+	top:30%;
+	left:54%;
+	position:absolute;
+}
+li.slider-items{
 	display:block;
 	height:313px;
 	width:540px;
+	visibility:hidden;
+	z-index:0;
+	position:absolute;
 }
-li.slide img{
-	float:left;
+li.slider-items img{
+	top:0%;
+	left:0%;
 }
-li.slide h2{
-	height:313px;
-	width:400px;
-	float:right;
+li.slider-items h2{
+	top:0%;
+	left:0%;
 }
+.nav-slider{}
+.nav-slider-items-current{
+	background-image:url(images/slider-nav-button-active.jpg);
+}
+.nav-slider-items-next{
+	background-image:url(images/slider-nav-button.jpg);
+}
+.nav-slider-items{
+	background-image:url(images/slider-nav-button.jpg);
+}
+
 #collections{
 	height:900px;
 	width:940px;
 }
 #collections h1{
-}
-ul li.collection-item{
-	
 }
 li.collection-item{
 	display:block;
