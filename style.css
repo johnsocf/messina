@@ -293,6 +293,79 @@ ul li.item-idea:nth-of-type(4){
 ul#item-ideas{
 	position:relative;
 }
+/*Index Contents*/
+#slider{
+	height:313px;
+	border-bottom: 1px solid rgb(207,207,207);
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(243,243,243,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(243,243,243,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 100%); /* W3C */
+	width:100%;
+}
+li.slide{
+	display:block;
+	height:313px;
+	width:540px;
+}
+li.slide img{
+	float:left;
+}
+li.slide h2{
+	height:313px;
+	width:400px;
+	float:right;
+}
+#collections{
+	height:900px;
+	width:940px;
+}
+#collections h1{
+}
+ul li.collection-item{
+	
+}
+li.collection-item{
+	display:block;
+	float:left;
+	height:260px;
+	margin: 0 20px 0 0;
+	width:220px;
+}
+li.collection-item img{
+	height:220px;
+}
+li.collection-item h2{}
+#collections-search{
+	float:right;
+	width:220px;
+	margin:0;
+}
+#collections-search input{
+	background: #ffffff;
+	border:1px solid #aaa9ba;
+	color: #aaa9ba;
+	font-family: 'junctionregularRegular', Arial, sans-serif;
+	font-size: 87.5%;
+	margin:0;
+	padding:2px;
+}
+#collections-search input[type=text]{
+	height:34px;
+	line-height:30px;
+	margin:0;
+	padding:0;
+	width:140px;
+}
+#collections-search input[type=submit]{
+	float:right;
+	height:36px;
+	margin:0;
+	padding:0;
+	text-transform: uppercase;
+	width:70px;
+}
 
 /*Kitchen Page Content*/
 a.image-box{
