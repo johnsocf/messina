@@ -294,6 +294,7 @@ ul#item-ideas{
 	position:relative;
 }
 /*Home Page Contents*/
+
 #slider-box{
 	height:313px;
 	border-bottom: 1px solid rgb(207,207,207);
@@ -303,42 +304,46 @@ ul#item-ideas{
 	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 100%); /* Chrome10+,Safari5.1+ */
 	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 100%); /* W3C */
 	position:relative;
+	width:2830px;
+}
+.slider{
+	height:313px;
+	width:2820px;
+	margin-left:214px;
 }
 li.slider-items{
 	display:block;
 	height:313px;
 	margin:0;
-	position:absolute;
 	padding:0;
 	visibility: visible;
 	width:940px;
 	float:left;
+	position:relative;
 }
 li.slider-items img.main-slider-image{
 	top:13.5%;
 	left:0%;
-	position:absolute;
 }
 li.slider-items img.secondary-slider-image{
 	top:0%;
 	left:32.3%;
-	position:absolute;
 }
 
 li.slider-items h1{
 	color:rgb(203,36,87);
 	font-size:225%;
-	top:0%;
-	position:absolute;
 	left:58%;
+	position:absolute;
+	top:0%;
 }
 li.slider-items h2, li.slider-items h2, li.slider-items h3, li.slider-items h4{
 	font-family: 'junctionregularRegular', Arial, sans-serif;
 	font-weight: lighter;
 	left:58%;
-	margin:0;
 	padding:0;
 	position:absolute;
+	width:410px;
 }
 li.slider-items h2{
 	color:rgb(152,152,152);
@@ -371,8 +376,7 @@ li.collection-item h2{
 	width:90px;
 	position:absolute;
 	top: 91%;
-	z-index: 3;
-	left: 45%;
+	margin-left:573px;
 }
 .nav-items{
 	height:15px;
