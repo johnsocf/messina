@@ -110,63 +110,7 @@
 			</div>
 			<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 			<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-			<script>
-			(function () {
-				var $mainImage = $('#primary');
-				var $thumbnail = $('li.thumbnail a');
-
-				$mainImage.load(function(){
-					console.log("loaded!");
-					$mainImage.fadeIn(500);
-				});
-
-				$thumbnail.click(function (event){
-					event.preventDefault();
-					console.log("clicked!");
-					var href = $(this).attr('href');
-
-				$mainImage.fadeOut(500, function (){
-						$mainImage.attr('src', href);
-					});
-				});
-				
-				$thumbnail.filter(':first').click();
-
-				// $(this).filter(':next').click().event.preventDefault;
-
-			})();
-
-			// (function () {
-			// 	var $mainImage = $('#primary');
-			// 	var $thumbnail = $('li.thumbnail a');
-
-			// 	$mainImage.load(function(){
-			// 		console.log("loaded!");
-			// 		$mainImage.fadeIn(500);
-			// 	});
-
-			// 	$thumbnail.hover(
-			// 		function () {
-			// 			var href = $(this).attr('href');
-			// 			$mainImage.attr('src', href);
-			// 			},
-			// 			// $(this).append($("<span> ***</span>"));
-			// 			// },
-			// 			function () {
-			// 			$mainImage.attr('src', href);
-			// 			}
-			// 		);	
-			// 		// $(this).find("span:last").remove();
-			// 		// }
-			// 	$mainImage.fadeOut(500, function (){
-			// 			$mainImage.attr('src', href);
-			// 	});
-				
-				
-			// 	$thumbnail.filter(':first').click();
-			// });
-
-			</script>
+			<script src="messina.js"></script>
 		</footer>
 	</body>
 </html>	
