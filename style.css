@@ -32,7 +32,7 @@ body {
 #main-header{
 	margin: 0 auto;
 }
-a#logo-primary{
+#logo-primary{
 	background: url(images/Messinalogo.png) no-repeat;
 	background-size:100%;
 	display:block;
@@ -146,13 +146,13 @@ vertical-align:text-top;
 }
 
 #gallery{
-	height:500px;
+	height:135px;
 	margin:0;
 	padding:0;
 	width:380px;
 	position:relative;
 }
-#gallery li.thumbnail a{
+#gallery .thumbnail a{
 	background-color:#a6a6a6;
 	float:left;
 	height:60px;
@@ -161,15 +161,15 @@ vertical-align:text-top;
 	width:60px;
 }
 
-#gallery li.thumbnail a img{
+#gallery .thumbnail a img{
 	background-color:#a6a6a6;
 	height:60px;
 	width:60px;
 }
-#gallery li.thumbnail:nth-of-type(1) a{
+#gallery .thumbnail:nth-of-type(1) a{
 	margin:20px 10px 20px 0;
 }
-#gallery li.thumbnail:nth-of-type(5) a{
+#gallery .thumbnail:nth-of-type(5) a{
 	margin:20px 0 20px 10px;
 }
 #item-details{
@@ -256,30 +256,31 @@ vertical-align:text-top;
 	margin:98px 0;
 	width:0;
 }
-#item-ideas{
+#product-ideas{
 	float:left;
 	height:333px;
 	width:940px;
 }
-.item-idea{
+.product-idea{
 	float:left;
 	height:220px;
 	margin:56px 10px;
 	padding:0;
 	width:220px;
+	list-style:none;
 }
-ul li.item-idea:nth-of-type(2){
+.product-idea:nth-of-type(1){
 	margin:56px 10px 56px 0;
 }
-ul li.item-idea:nth-of-type(4){
+.product-idea:nth-of-type(4){
 	margin:56px 0 56px 10px;
 }
-.item-idea a img{
+.product-idea a img{
 	background-color:#fff;
 	height:220px;
 	width:220px;
 }
-.ideas-title{
+#product-ideas h1{
 	color:rgb(47,46,70);
 	display:block;
 	font-family: 'junctionregularRegular', Arial, sans-serif;
@@ -290,7 +291,7 @@ ul li.item-idea:nth-of-type(4){
 	position:absolute;
 	top:10px;
 }
-ul#item-ideas{
+#product-ideas{
 	position:relative;
 }
 /*Home Page Contents*/
