@@ -134,14 +134,19 @@ vertical-align:text-top;
 #gallery-box{
 	float:left;
 }
-
-#primary{
+figure{
+	margin:0;
+	padding:0;
+	height:380px;
 	height:378px;
 	margin:0px;
 	padding:0;
 	width:100%;
 	border: 1px solid rgb(239,244,246);
 	width:380px;
+}
+
+#primary{
 	display:block;
 }
 
@@ -152,13 +157,11 @@ vertical-align:text-top;
 	width:380px;
 	position:relative;
 }
-#gallery .thumbnail a{
-	background-color:#a6a6a6;
+#gallery .thumbnail{
 	float:left;
-	height:60px;
-	margin:20px 10px 0 10px;
-	padding:0;
-	width:60px;
+	margin:20px 10px 0 0px;
+}
+#gallery .thumbnail a{
 }
 
 #gallery .thumbnail a img{
@@ -166,10 +169,7 @@ vertical-align:text-top;
 	height:60px;
 	width:60px;
 }
-#gallery .thumbnail:nth-of-type(1) a{
-	margin:20px 10px 20px 0;
-}
-#gallery .thumbnail:nth-of-type(5) a{
+#gallery .thumbnail:nth-of-type(5){
 	margin:20px 0 20px 10px;
 }
 #item-details{

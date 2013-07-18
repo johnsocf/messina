@@ -34,23 +34,35 @@ $('.quickview-button').click(function(event){
 (function () {
 				var $mainImage = $('#primary');
 				var $thumbnail = $('.thumbnail a');
-
+				
 				$mainImage.load(function(){
 					console.log("loaded!");
 					$mainImage.fadeIn(500);
 				});
+				
 
 				$thumbnail.click(function (event){
 					event.preventDefault();
 					console.log("clicked!");
-					var href = $(this).attr('href');
 
+				if ($(this).hasClass('active')){
+					console.log("yes active already");
+				}
+
+				else {
+				$thumbnail.removeClass('active');
+				
+					
+					var href = $(this).attr('href');
+				$(this).addClass('active');	
 				$mainImage.fadeOut(500, function (){
 						$mainImage.attr('src', href);
 					});
+				// });
+				}
 				});
 				
-				$thumbnail.filter(':first').click();
+				// $thumbnail.filter(':first').click();
 
 				// $(this).filter(':next').click().event.preventDefault;
 
