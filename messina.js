@@ -45,28 +45,39 @@ $('.quickview-button').click(function(event){
 					event.preventDefault();
 					console.log("clicked!");
 
-				if ($(this).hasClass('active')){
+				if ($(this).hasClass('active')) {
 					console.log("yes active already");
 				}
 
 				else {
-				$thumbnail.removeClass('active');
-				
-					
+					$thumbnail.removeClass('active');
 					var href = $(this).attr('href');
-				$(this).addClass('active');	
-				$mainImage.fadeOut(500, function (){
-						$mainImage.attr('src', href);
+					$(this).addClass('active');	
+					$mainImage.fadeOut(500, function (){
+					     $mainImage.attr('src', href);
 					});
+					// closes else
 				// });
 				}
+				  // closes else statement
 				});
+				  // closes click event/function
 				
-				// $thumbnail.filter(':first').click();
+
+			})(); 
+			// closes self executing anonymous function
+
+
+			// $thumbnail.filter(':first').click();
 
 				// $(this).filter(':next').click().event.preventDefault;
 
-			})();
+
+
+
+
+
+
 
 			// (function () {
 			// 	var $mainImage = $('#primary');
