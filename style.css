@@ -151,7 +151,7 @@ figure{
 }
 
 #gallery{
-	height:135px;
+	height:100px;
 	margin:0;
 	padding:0;
 	width:380px;
@@ -257,29 +257,16 @@ figure{
 	width:0;
 }
 #product-ideas{
-	float:left;
 	height:333px;
 	width:940px;
-}
-.product-idea{
-	float:left;
-	height:220px;
-	margin:56px 10px;
+	margin:0;
 	padding:0;
-	width:220px;
-	list-style:none;
+	float:left;
 }
-.product-idea:nth-of-type(1){
-	margin:56px 10px 56px 0;
+#product-ideas h2{
+	font-size:16px;
 }
-.product-idea:nth-of-type(4){
-	margin:56px 0 56px 10px;
-}
-.product-idea a img{
-	background-color:#fff;
-	height:220px;
-	width:220px;
-}
+
 #product-ideas h1{
 	color:rgb(47,46,70);
 	display:block;
