@@ -355,11 +355,6 @@ figure{
 	float:left;
 	background-color: rgb(235,235,235);
 }
-.row-one {
-	width:100%;
-	border:1px solid green;
-}
-.row-two {}
 #shopping-cart .sku {
 	float:left;
 	width:78px;
@@ -440,11 +435,18 @@ figure{
 	color: rgb(217,24,24);
 	padding-bottom: 17px;
 }
-.order {
+.estimated-order-number {
 	padding-top: 17px;
 	border-top: 1px solid #fff;
-	width:127%;
-	margin-left: -35px;
+	width:96%;
+	margin-left: -18px;
+	text-align: right;
+}
+.estimated-order {
+	padding-top: 17px;
+	border-top: 1px solid #fff;
+	width:133%;
+	margin-left: -36px;
 	text-align: center;
 }
 #shopping-cart .sale-price {
