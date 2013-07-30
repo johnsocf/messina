@@ -497,9 +497,10 @@ figure{
 	text-transform: uppercase;
 	width:111px;
 }
-#shopping-cart h3 {
-	padding-top: 20px;
+#shopping-cart h2.shipping {
+	padding: 20px 0 20px 0;
 	font-family: 'junctionregularRegular', Arial, sans-serif;
+	width:260px;
 }
 #shopping-cart p {
 	float:left;
