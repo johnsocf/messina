@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<title>Messina Cart</title>
-		<link href="div-table.css" rel="stylesheet" type="text/css">
+		<link href="cart2.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 
@@ -23,26 +23,26 @@
 				<h1>My Shopping Cart</h1>
 				<ol class="table-row table-header-group">
 					<li class="column-one">Items</li>
-					<li class="column-two">Shopping &#38; Availability</li>
+					<li class="column-two">Shipping &#38; Availability</li>
 					<li class="column-three">Item Price</li>
-					<li class="column-four">Qty</li>
+					<li class="column-four heading">Qty</li>
 					<li class="column-five">Total</li>
 				</ol>	
 				<ol class="table-row row-one">
 					<li class="column-one table-cell">
 						<img src="images/detail-view1-big-sir.jpg" alt="Big Sir Dining Table">
 						<h2>Big Sur Table</h2>
-						<p>SKU 1234-5678</p>
+						<p class="sku">SKU 1234-5678</p>
 					</li>
 					<li class="column-two table-cell">
 						<p>In stock, ready to ship</p>
-						<p>Shipping:Standard</p>
+						<p class="shipping-type">Shipping:Standard</p>
 						<p>Arrives:3-5 business days</p>
 						<p class="eligibility">Eligible for Free Shipping on Select Orders over $99</p>
 					</li>
 					<li class="column-three table-cell">
 						<p class="sale-price">$1499</p>
-						<p>reg $1699</p>
+						<p class="regular-price">reg. $1699</p>
 					</li>
 					<li class="column-four table-cell">
 						<input type="text" name="quantity" placeholder="1" />
@@ -60,17 +60,17 @@
 					<li class="column-one table-cell">
 						<img src="images/detail-view1-big-sir.jpg" alt="Big Sir Dining Table">
 						<h2>Big Sur Table</h2>
-						<p>SKU 1234-5678</p>
+						<p class="sku">SKU 1234-5678</p>
 					</li>
 					<li class="column-two table-cell">
 						<p>In stock, ready to ship</p>
-						<p>Shipping:Standard</p>
+						<p class="shipping-type">Shipping:Standard</p>
 						<p>Arrives:3-5 business days</p>
 						<p class="eligibility">Eligible for Free Shipping on Select Orders over $99</p>
 					</li>
 					<li class="column-three table-cell">
 						<p class="sale-price">$1499</p>
-						<p>reg $1699</p>
+						<p class="regular-price">reg. $1699</p>
 					</li>
 					<li class="column-four table-cell">
 						<input type="text" name="quantity" placeholder="1" />
@@ -85,25 +85,25 @@
 					</li>
 				</ol>		
 				<ol class="checkout-totals table-column">
-					<li class="table-cell">$1499</li>
-					<li class="table-cell">$49.00</li>
-					<li class="table-cell">$49.00</li>
-					<li class="table-cell">$1499</li>
-					<li class="table-cell">$Total</li>
+					<li class="checkout-table-cell">$1499</li>
+					<li class="checkout-table-cell">$49.00</li>
+					<li class="checkout-table-cell shipping-discount">$49.00</li>
+					<li class="checkout-table-cell order">$1499</li>
+					<li class="checkout-table-cell">$Total</li>
 				</ol>
 				<ol class="checkout-info table-column">
-					<li class="table-cell">Merchandise</li>
-					<li class="table-cell">Estimated Shipping</li>
-					<li class="table-cell">Shipping Discount</li>
-					<li class="table-cell">Estimated Order</li>
-					<li class="table-cell">Total:(before tax)</li>
+					<li class="checkout-table-cell">Merchandise</li>
+					<li class="checkout-table-cell">Estimated Shipping</li>
+					<li class="checkout-table-cell shipping-discount">Shipping Discount</li>
+					<li class="checkout-table-cell order">Estimated Order</li>
+					<li class="checkout-table-cell">Total:(before tax)</li>
 				</ol>		
+				<h3>Shipping Outside the Continental U.S.</h2>
+				<p class="shipping-info">Messina offers convenient shipping to most destinations worldwide. If you live outside the Continental United States and would like to place an order, we would be happy to assist you. To get started, click one of the buttons below, or contact us by telephone at +1-800-123-5678</p>
 				<form class="checkout-button">
 				<input type="hidden">
 				<input type="submit" value="checkout" />
 				</form>	
-				<h3>Shipping Outside the Continental U.S.</h2>
-				<p class="shipping-info">Messina offers convenient shipping to most destinations worldwide. If you live outside the Continental United States and would like to place an order, we would be happy to assist you. To get started, click one of the buttons below, or contact us by telephone at +1-800-123-5678</p>
 			</div> <!-- end #shopping-cart -->
 		</div> <!-- end #content-shopping-cart -->
 		<footer id="footer-primary">
