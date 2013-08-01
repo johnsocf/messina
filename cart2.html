@@ -19,90 +19,92 @@
 		</nav>	
 
 		<div id="content-shopping-cart">	
+			<form>
 			<div id="shopping-cart" class="table">
 				<h1>My Shopping Cart</h1>
-				<ol class="table-row table-header-group">
-					<li class="column-one">Items</li>
-					<li class="column-two">Shipping &#38; Availability</li>
-					<li class="column-three">Item Price</li>
-					<li class="column-four heading">Qty</li>
-					<li class="column-five">Total</li>
-				</ol>	
-				<ol class="table-row row-one">
-					<li class="column-one table-cell">
+				<div class="table-row table-header-group">
+					<div class="column-one heading-cell">Items</div>
+					<div class="column-two heading-cell">Shipping &#38; Availability</div>
+					<div class="column-three heading-cell">Item Price</div>
+					<div class="column-four heading heading-cell">Qty</div>
+					<div class="column-five heading-cell">Total</div>
+				</div>	
+				<div class="table-row row-one">
+					<div class="column-one table-cell">
 						<img src="images/detail-view1-big-sir.jpg" alt="Big Sir Dining Table">
 						<h2>Big Sur Table</h2>
 						<p class="sku">SKU 1234-5678</p>
-					</li>
-					<li class="column-two table-cell">
+					</div>
+					<div class="column-two table-cell">
 						<p>In stock, ready to ship</p>
 						<p class="shipping-type">Shipping:Standard</p>
 						<p>Arrives:3-5 business days</p>
 						<p class="eligibility">Eligible for Free Shipping on Select Orders over $99</p>
-					</li>
-					<li class="column-three table-cell">
+					</div>
+					<div class="column-three table-cell">
 						<p class="sale-price">$1499</p>
 						<p class="regular-price">reg. $1699</p>
-					</li>
-					<li class="column-four table-cell">
+					</div>
+					<div class="column-four table-cell">
 						<input type="text" name="quantity" placeholder="1" />
-					</li>
-					<li class="column-five table-cell">$1499</li>
-					<li class="column-six table-cell cart-status">
-						<ul>
-							<li><a href="FIXME">Update</a></li>
-							<li><a href="FIXME">Remove</a></li>
-							<li><a href="FIXME">Save for Later</a></li>
-						</ul>	
-					</li>
-				</ol>		
-				<ol class="table-row row-two">
-					<li class="column-one table-cell">
+					</div>
+					<div class="column-five table-cell">$1499</div>
+					<div class="column-six table-cell cart-status">
+							<a href="FIXME">Update</a>
+							<a href="FIXME">Remove</a>
+							<a href="FIXME">Save for Later</a>
+					</div>		
+				</div>		
+				<div class="table-row row-two">
+					<div class="column-one table-cell">
 						<img src="images/detail-view1-big-sir.jpg" alt="Big Sir Dining Table">
 						<h2>Big Sur Table (2)</h2>
 						<p class="sku">SKU 1234-5678</p>
-					</li>
-					<li class="column-two table-cell">
+					</div>
+					<div class="column-two table-cell">
 						<p>In stock, ready to ship</p>
 						<p class="shipping-type">Shipping:Standard</p>
 						<p>Arrives:3-5 business days</p>
 						<p class="eligibility">Eligible for Free Shipping on Select Orders over $99</p>
-					</li>
-					<li class="column-three table-cell">
+					</div>
+					<div class="column-three table-cell">
 						<p class="sale-price">$1499</p>
 						<p class="regular-price">reg. $1699</p>
-					</li>
-					<li class="column-four table-cell">
+					</div>
+					<div class="column-four table-cell">
 						<input type="text" name="quantity" placeholder="1" />
-					</li>
-					<li class="column-five table-cell">$1499</li>
-					<li class="column-six table-cell cart-status">
-						<ul>
-							<li><a href="FIXME">Update<a></li>
-							<li><a href="FIXME">Remove<a></li>
-							<li><a href="FIXME">Save for Later<a></li>
-						</ul>	
-					</li>
-				</ol>		
-				<ol class="checkout-totals table-column">
-					<li class="checkout-table-cell">$1499</li>
-					<li class="checkout-table-cell">$49.00</li>
-					<li class="checkout-table-cell shipping-discount">$49.00</li>
-					<li class="checkout-table-cell estimated-order-number">$1499</li>
-					<li class="checkout-table-cell">$Total</li>
-				</ol>
-				<ol class="checkout-info table-column">
-					<li class="checkout-table-cell">Merchandise</li>
-					<li class="checkout-table-cell">Estimated Shipping</li>
-					<li class="checkout-table-cell shipping-discount">Shipping Discount</li>
-					<li class="checkout-table-cell estimated-order">Estimated Order</li>
-					<li class="checkout-table-cell">Total:(before tax)</li>
-				</ol>		
+					</div>
+					<div class="column-five table-cell">$1499</div>
+					<div class="column-six table-cell cart-status">
+						<a href="FIXME">Update<a>
+						<a href="FIXME">Remove<a>
+						<a href="FIXME">Save for Later<a>
+				</div>		
+				<div class="checkout-info table-column">
+					<dl class="checkout-totals">
+						<dt><h2>Merchandise</h2><dt>
+						<dd class="checkout-table-cell">$1499.00</dd>	
+						
+						<dt><h2 class="checkout-table-cell">Estimated Shipping</h2></dt>
+						<dd class="checkout-table-cell">$49.00</dd>
+
+						<dt><h2 class="checkout-table-cell shipping-discount">Shipping Discount</h2></dt>
+						<dd class="checkout-table-cell shipping-discount">$49.00</dd>
+
+						<dt><h2 class="checkout-table-cell">Estimated Order</h2></dt>
+						<dd class="checkout-table-cell">$1499</dd>
+
+						<dt><h2 class="checkout-table-cell">Total:(before tax)</h2></dt>
+						<dd class="checkout-table-cell">$Total</dd>
+					</dl>
+				</div>	
+	
 				<h2 class="shipping">Shipping Outside the Continental U.S.</h2>
 				<p class="shipping-info">Messina offers convenient shipping to most destinations worldwide. If you live outside the Continental United States and would like to place an order, we would be happy to assist you. To get started, click one of the buttons below, or contact us by telephone at +1-800-123-5678</p>
-				<form class="checkout-button">
-				<input type="hidden">
-				<input type="submit" value="checkout" />
+				<div class="checkout-button">
+					<input type="hidden">
+					<input type="submit" value="checkout" />
+				</div>
 				</form>	
 			</div> <!-- end #shopping-cart -->
 		</div> <!-- end #content-shopping-cart -->

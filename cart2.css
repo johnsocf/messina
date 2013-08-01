@@ -341,15 +341,26 @@ figure{
 	padding:5px;
 	border-bottom: 1px solid rgb(246,246,246);
 }
-.checkout-table-cell {
+.heading-cell {
 	display: table-cell;
-	height:17px;
+	height:20px;
 	float:left;
 	padding:5px;
+}
+.checkout-table-cell {
+}
+#shopping-cart h2.checkout-table-cell  {
 }
 .checkout-totals .table-cell {
 	float:left;
 	background-color: rgb(235,235,235);
+}
+.checkout-info {
+	width:200px;
+	background-color: rgb(235,235,235);
+	padding:20px;
+}
+.checkout-titles {
 }
 .checkout-info .table-cell {
 	float:left;
@@ -362,7 +373,6 @@ figure{
 }
 .column-one {
 	width:31%;
-	float:left;
 	padding:5px;
 	border-bottom: 1px solid rgb(246,246,246);
 }
@@ -375,22 +385,14 @@ figure{
 }
 .column-two {
 	width:31%;
-	padding:5px;
 }
 .column-three {
 	font-size:100%;
 	width:7.5%;
-	padding:5px;
 }
 .column-four {
 	width:8%;
-	float:left;
-	padding:5px;
 	border-bottom: 1px solid rgb(246,246,246);
-	padding:5px;
-}
-.heading{
-	margin-left:16px;
 }
 .column-four input{
 	width:40%;
@@ -399,26 +401,24 @@ figure{
 }
 .column-five {
 	width:7.5%;
-	padding:5px;
 }
 .column-six {
 	width:8.6%;
-	padding:5px;
-}
-.column-six li {
-	padding:1.5px;
-}
-.column-six ul{
-	padding: 0;
-}
-.column-six li{
-	list-style-type: none;
 }
 .cart-status {
 	font-size:75%;
 	text-align: left;
 	margin:0;
 	list-style: none;
+}
+dt h2 {
+	float:;left;
+}
+dd.checkout-table-cell {
+	float:right;
+}
+.heading{
+	margin-left:16px;
 }
 .cart-status a {
 	margin:0 auto;
@@ -427,27 +427,20 @@ figure{
 }
 .checkout-info {
 	background-color: rgb(235,235,235);
+	padding: 10px;
 }
 .eligibility {
 	color: rgb(217,24,24);
 }
 .shipping-discount {
 	color: rgb(217,24,24);
-	padding-bottom: 17px;
 }
 .estimated-order-number {
 	padding-top: 17px;
 	border-top: 1px solid #fff;
 	width:96%;
-	margin-left: -18px;
-	text-align: right;
 }
 .estimated-order {
-	padding-top: 17px;
-	border-top: 1px solid #fff;
-	width:133%;
-	margin-left: -36px;
-	text-align: center;
 }
 #shopping-cart .sale-price {
 	color:rgb(217,24,24);
@@ -464,15 +457,11 @@ figure{
 }
 .checkout-info {
 	float:right;
-	width:16%;
-}
-.checkout-totals {
-	background-color: rgb(235,235,235);
-	float:right;
-	width: 7%;
+	width:27%;
 }
 .checkout-button {
-	margin-left:830px;
+	float:right;
+	margin-left:800px;
 }
 .checkout-button input{
 	background: rgb(47,46,70);
@@ -500,7 +489,7 @@ figure{
 #shopping-cart h2.shipping {
 	padding: 20px 0 20px 0;
 	font-family: 'junctionregularRegular', Arial, sans-serif;
-	width:260px;
+	width:265px;
 }
 #shopping-cart p {
 	float:left;
@@ -515,10 +504,10 @@ figure{
 	width:87%;
 }
 #shopping-cart .shipping-info {
-	font-size: 68.3%;
+	font-size: 100%;
 	font-family: 'junctionregularRegular', Arial, sans-serif;
 	float:left;
-	width:46%;
+	width:68%;
 }
 
 /*Home Page Contents*/
