@@ -294,6 +294,7 @@ figure{
 	font-family: 'junctionregularRegular', Arial, sans-serif;
 	margin:0;
 	padding:20px 0;
+	font-size:130%;
 }
 #shopping-cart h2{
 	font-size: 87.5%;
@@ -319,7 +320,7 @@ figure{
 .table {
 	display: table;
 }
-.table-header-group {
+.cart-header-group {
 	display: table-header-group;
 	background-color: rgb(235,235,235);
 	color: rgb (82,82,82);
@@ -331,7 +332,7 @@ figure{
 .table-header-group li {
 	float:left;
 }
-.table-row {
+.cart-row {
 	display: table-row;
 }
 .table-cell {
@@ -351,58 +352,69 @@ figure{
 }
 #shopping-cart h2.checkout-table-cell  {
 }
-.checkout-totals .table-cell {
-	float:left;
+.checkout-totals, .checkout-totals .table-cell {
+	float:right;
+	width:332px;
+	padding:10px;
+	line-height:24px;
 	background-color: rgb(235,235,235);
+}
+.checkout-totals dt, .checkout-totals dd {
+}
+.checkout-totals dd && dt, checkout-totals dd && dt {
+	clear:left;
+}
+.checkout-totals dd && dt {
+	float:none;
+}
+.checkout-totals h2 {
+
 }
 .checkout-info {
 	width:200px;
-	background-color: rgb(235,235,235);
-	padding:20px;
 }
 .checkout-titles {
 }
 .checkout-info .table-cell {
 	float:left;
-	background-color: rgb(235,235,235);
 }
 #shopping-cart .sku {
 	float:left;
 	width:78px;
 	padding: 0 10px;
 }
-.column-one {
+.cart-items {
 	width:31%;
 	padding:5px;
 	border-bottom: 1px solid rgb(246,246,246);
 }
-.column-one img{
+.cart-row img{
 	width:20%;
 	float:left;
 }
-.column-one h2{
+.cart-row h2{
 	margin-right:119px;
 }
-.column-two {
+.cart-shipping-availability {
 	width:31%;
 }
-.column-three {
+.cart-item-price {
 	font-size:100%;
 	width:7.5%;
 }
-.column-four {
+.cart-item-qty {
 	width:8%;
 	border-bottom: 1px solid rgb(246,246,246);
 }
-.column-four input{
+.cart-item-qty input{
 	width:40%;
 	text-align: center;
 	margin-left:12px;
 }
-.column-five {
+.cart-item-total {
 	width:7.5%;
 }
-.column-six {
+.cart-item-status {
 	width:8.6%;
 }
 .cart-status {
@@ -424,10 +436,6 @@ dd.checkout-table-cell {
 	margin:0 auto;
 	display:block;
 	text-decoration: none;
-}
-.checkout-info {
-	background-color: rgb(235,235,235);
-	padding: 10px;
 }
 .eligibility {
 	color: rgb(217,24,24);
@@ -458,6 +466,7 @@ dd.checkout-table-cell {
 .checkout-info {
 	float:right;
 	width:27%;
+	height:155px;
 }
 .checkout-button {
 	float:right;
@@ -504,10 +513,10 @@ dd.checkout-table-cell {
 	width:87%;
 }
 #shopping-cart .shipping-info {
-	font-size: 100%;
+	font-size: 87%;
 	font-family: 'junctionregularRegular', Arial, sans-serif;
 	float:left;
-	width:68%;
+	width:61%;
 }
 
 /*Home Page Contents*/
